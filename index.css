@@ -11,7 +11,7 @@ body { /* We can style any HTML element by using its name - here we're styling t
   color: #333;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
+  background-color: #f2e8c2;
   margin:0 auto;
   max-width: 800px;
   padding-top: 60px;
@@ -20,11 +20,14 @@ body { /* We can style any HTML element by using its name - here we're styling t
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: #24317d;
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
+  
+
 }
+
 
 /* We want the headings to be a little bigger than the paragraph text */
 .big { /* This is the class we created in the HTML file, you can use it to style any element */
@@ -51,17 +54,41 @@ section {
 
 /* Links */
 /* We want the links to be a little more visible  and a different color */
+
+
 a {
-  color: #065f46;
   text-decoration: none;
+  position: relative;
+  color: rgb(54, 94, 70);
+  transition: text-shadow 0.3s, color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: rgb(17, 63, 19);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(249, 250, 249);
+  transition: width 0.4s ease;
+}
+
+a:hover::before {
+  width: 100%;
 }
   
 /* Images */
-img {
-  max-width: 100%;
-  height: auto;
+figure {
+  transition: transform 0.4s ease;
+  display: inline-block;
+}
+
+figure:hover {
+  transform: scale(1.2); /* Zoom in on hover */
 }
