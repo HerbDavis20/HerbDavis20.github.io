@@ -4,12 +4,12 @@
     "text": "Nuclear Power",
     "anchor": "start",
     "subtitle": "Output, GWh, | IEA via ECO-API",
-    "fontSize": "14",
-    "subtitleFontSize": "12",
+    "fontSize": 14,
+    "subtitleFontSize": 12,
     "color": "#4b4bbe",
     "subtitleColor": "#000000"
   },
-  "height": "250",
+  "height": 250,
   "width": "container",
   "autosize": {
     "type": "fit",
@@ -29,7 +29,7 @@
   "mark": {
     "type": "line",
     "color": "#35458f",
-    "strokeWidth": "1.4"
+    "strokeWidth": 1.4
   },
   "encoding": {
     "x": {
