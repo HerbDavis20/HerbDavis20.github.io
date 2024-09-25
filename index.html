@@ -69,13 +69,6 @@
 
 
 
-
-
-
-
-
-
-
 <!--This is the new section i have created for the week 1 project. in here i need to embed 2 charts-->
     <section>
         <div class="chart-description">
@@ -102,15 +95,7 @@
 
         vegaEmbed('#Location3', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
 
-
-    </script>
-        <script>
             // This is a comment in JavaScript - it's a different language to HTML and CSS
     
             let figure_4_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto7.json" ; // We're storing the URL of the graph we want to display in a variable
@@ -118,19 +103,10 @@
     
             vegaEmbed('#Location4', figure_4_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
     
-       
-        </script>
 
 
 
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
-    <script>
+ 
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
         let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
@@ -138,14 +114,26 @@
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
+    </script>
 
+    <section>
+        <h2 style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+            <!-- This is a header, it is the largest text on the page -->
+            Project 2: Charts in Vega
+        </h2>
+        <figure id="Location5"></figure>
+
+    </section>
+
+    <script> 
+
+        let figure_5_spec = "https://vega.github.io/editor/#/edited";
+
+        vegaEmbed('#Location5', figure_5_spec)
 
     </script>
+
+
 
 </body>
     
