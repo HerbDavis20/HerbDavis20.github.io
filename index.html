@@ -85,23 +85,28 @@
         </p>
         <figure id="Location4"></figure>
     </section>
-    <div>
+    
         <h2 style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
             <!-- This is a header, it is the largest text on the page -->
-            Project 2: Charts in Vega
+            Week 2: Charts in Vega
         </h2>
+        <h3>
+            Chart 1:
+        </h3>
         <figure id="Location5" style="width: 100%; height: 400px;"></figure>
 
+        <h3>
+            Chart 2:
+            <figure id="Location6" style="width: 100%; height: 400px;"></figure>
+
+        </h3>
+
     </section>
 
-    </div>
+
     <section>
     
-    <section>
-        <h1>
-            tester1
-        </h1>
-    </section>
+
 
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
@@ -135,10 +140,17 @@
     let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/visualization.vl.json"; // We're storing the URL of the graph we want to display in a variable
                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-        vegaEmbed('#Location5', figure_5_spec)  
+        vegaEmbed('#Location5', figure_5_spec)
 
+
+    let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week2_chart_2.json"; // We're storing the URL of the graph we want to display in a variable
+                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+     vegaEmbed('#Location6', figure_6_spec)  
 
     </script>
+
+
 
 
 
