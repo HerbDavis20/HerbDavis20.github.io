@@ -8,8 +8,8 @@
     "point": true
     
   },
-        "width": 400,
-    "height": 300,
+        "width": 500,
+    "height": 400,
   "encoding": {
     "x": {"timeUnit": "year", "field": "date"},
     "y": {"field": "value", "type": "quantitative"},

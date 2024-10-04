@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/VIX%20index%20(FRED).csv"
+    },
+    "title": {
+      "text": "Volatility Index - VIX",
+      "subtitle": "VIXCLS, 2002-2024, Source: FRED"
+    },
+    "width": 600,
+    "height": 200,
+    "transform": [
+      {
+        "window": [
+          {
+            "op": "mean",
+            "field": "VIXCLS",
+            "as": "MovingAverage"
+          }
+        ],
+        "frame": [-6, 0] 
+        
+      }
+    ],
+    "layer": [
+      {
+        "mark": { "type": "line", "color": "navy" },
+        "encoding": {
+          "x": {
+            "field": "DATE",
+            "type": "temporal",
+            "title": "",
+            "axis": {
+              "grid": false
+            }
+          },
+          "y": {
+            "field": "VIXCLS",
+            "type": "quantitative",
+            "title": ""
+          }
+        }
+      },
+      {
+        "mark": { "type": "line", "color": "red", "strokeDash": [5, 2] },
+        "encoding": {
+          "x": {
+            "field": "DATE",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "MovingAverage",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
+  
+  
