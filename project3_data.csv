@@ -1,172 +1,172 @@
 region ,date,value
-North East,2004,11470.00
-North West,2004,12215.00
-Yorkshire and The Humber,2004,12004.00
-East Midlands,2004,12309.00
-West Midlands,2004,12190.00
-East,2004,14026.00
-London,2004,17569.00
-South East,2004,15627.00
-South West,2004,13396.00
-North East,2005,11697.00
-North West,2005,12598.00
-Yorkshire and The Humber,2005,12302.00
-East Midlands,2005,12643.00
-West Midlands,2005,12391.00
-East,2005,14532.00
-London,2005,18587.00
-South East,2005,16185.00
-South West,2005,13901.00
-North East,2006,12121.00
-North West,2006,13014.00
-Yorkshire and The Humber,2006,12729.00
-East Midlands,2006,13052.00
-West Midlands,2006,12852.00
-East,2006,14977.00
-London,2006,19521.00
-South East,2006,16918.00
-South West,2006,14614.00
-North East,2007,12434.00
-North West,2007,13531.00
-Yorkshire and The Humber,2007,13247.00
-East Midlands,2007,13803.00
-West Midlands,2007,13201.00
-East,2007,15609.00
-London,2007,20924.00
-South East,2007,17730.00
-South West,2007,15134.00
-North East,2008,12721.00
-North West,2008,13756.00
-Yorkshire and The Humber,2008,13417.00
-East Midlands,2008,13968.00
-West Midlands,2008,13548.00
-East,2008,16119.00
-London,2008,21540.00
-South East,2008,18086.00
-South West,2008,15612.00
-North East,2009,13291.00
-North West,2009,14260.00
-Yorkshire and The Humber,2009,13784.00
-East Midlands,2009,14199.00
-West Midlands,2009,13873.00
-East,2009,16536.00
-London,2009,21431.00
-South East,2009,18443.00
-South West,2009,15699.00
-North East,2010,13509.00
-North West,2010,14378.00
-Yorkshire and The Humber,2010,13841.00
-East Midlands,2010,14221.00
-West Midlands,2010,14012.00
-East,2010,16657.00
-London,2010,21575.00
-South East,2010,18484.00
-South West,2010,16065.00
-North East,2011,13654.00
-North West,2011,14506.00
-Yorkshire and The Humber,2011,14067.00
-East Midlands,2011,14499.00
-West Midlands,2011,14188.00
-East,2011,16778.00
-London,2011,21391.00
-South East,2011,18661.00
-South West,2011,16312.00
-North East,2012,14227.00
-North West,2012,14972.00
-Yorkshire and The Humber,2012,14477.00
-East Midlands,2012,14981.00
-West Midlands,2012,14568.00
-East,2012,17370.00
-London,2012,22698.00
-South East,2012,19310.00
-South West,2012,16685.00
-North East,2013,14564.00
-North West,2013,15427.00
-Yorkshire and The Humber,2013,14883.00
-East Midlands,2013,15434.00
-West Midlands,2013,15057.00
-East,2013,17984.00
-London,2013,23906.00
-South East,2013,20083.00
-South West,2013,17306.00
-North East,2014,14959.00
-North West,2014,15828.00
-Yorkshire and The Humber,2014,15300.00
-East Midlands,2014,15913.00
-West Midlands,2014,15606.00
-East,2014,18537.00
-London,2014,24890.00
-South East,2014,20575.00
-South West,2014,17888.00
-North East,2015,15516.00
-North West,2015,16551.00
-Yorkshire and The Humber,2015,16021.00
-East Midlands,2015,16680.00
-West Midlands,2015,16391.00
-East,2015,19582.00
-London,2015,26652.00
-South East,2015,21790.00
-South West,2015,18686.00
-North East,2016,15718.00
-North West,2016,16664.00
-Yorkshire and The Humber,2016,16106.00
-East Midlands,2016,16703.00
-West Midlands,2016,16671.00
-East,2016,19882.00
-London,2016,27099.00
-South East,2016,22082.00
-South West,2016,18841.00
-North East,2017,16038.00
-North West,2017,17108.00
-Yorkshire and The Humber,2017,16582.00
-East Midlands,2017,17153.00
-West Midlands,2017,16915.00
-East,2017,20439.00
-London,2017,27599.00
-South East,2017,22624.00
-South West,2017,19265.00
-North East,2018,16474.00
-North West,2018,17629.00
-Yorkshire and The Humber,2018,17189.00
-East Midlands,2018,17635.00
-West Midlands,2018,17439.00
-East,2018,21185.00
-London,2018,29104.00
-South East,2018,23405.00
-South West,2018,19996.00
-North East,2019,16991.00
-North West,2019,18229.00
-Yorkshire and The Humber,2019,17693.00
-East Midlands,2019,18208.00
-West Midlands,2019,17910.00
-East,2019,21787.00
-London,2019,29719.00
-South East,2019,24148.00
-South West,2019,20725.00
-North East,2020,17239.00
-North West,2020,18372.00
-Yorkshire and The Humber,2020,17876.00
-East Midlands,2020,18444.00
-West Midlands,2020,18027.00
-East,2020,21613.00
-London,2020,29245.00
-South East,2020,23816.00
-South West,2020,20627.00
-North East,2021,17592.00
-North West,2021,18805.00
-Yorkshire and The Humber,2021,18347.00
-East Midlands,2021,18942.00
-West Midlands,2021,18507.00
-East,2021,22377.00
-London,2021,30662.00
-South East,2021,24606.00
-South West,2021,21304.00
-North East,2022,18388.00
-North West,2022,19752.00
-Yorkshire and The Humber,2022,19249.00
-East Midlands,2022,19879.00
-West Midlands,2022,19480.00
-East,2022,23661.00
-London,2022,32330.00
-South East,2022,26058.00
-South West,2022,22612.00
+North East,2004-01-01,11470
+North West,2004-01-01,12215
+Yorkshire and The Humber,2004-01-01,12004
+East Midlands,2004-01-01,12309
+West Midlands,2004-01-01,12190
+East,2004-01-01,14026
+London,2004-01-01,17569
+South East,2004-01-01,15627
+South West,2004-01-01,13396
+North East,2005-01-01,11697
+North West,2005-01-01,12598
+Yorkshire and The Humber,2005-01-01,12302
+East Midlands,2005-01-01,12643
+West Midlands,2005-01-01,12391
+East,2005-01-01,14532
+London,2005-01-01,18587
+South East,2005-01-01,16185
+South West,2005-01-01,13901
+North East,2006-01-01,12121
+North West,2006-01-01,13014
+Yorkshire and The Humber,2006-01-01,12729
+East Midlands,2006-01-01,13052
+West Midlands,2006-01-01,12852
+East,2006-01-01,14977
+London,2006-01-01,19521
+South East,2006-01-01,16918
+South West,2006-01-01,14614
+North East,2007-01-01,12434
+North West,2007-01-01,13531
+Yorkshire and The Humber,2007-01-01,13247
+East Midlands,2007-01-01,13803
+West Midlands,2007-01-01,13201
+East,2007-01-01,15609
+London,2007-01-01,20924
+South East,2007-01-01,17730
+South West,2007-01-01,15134
+North East,2008-01-01,12721
+North West,2008-01-01,13756
+Yorkshire and The Humber,2008-01-01,13417
+East Midlands,2008-01-01,13968
+West Midlands,2008-01-01,13548
+East,2008-01-01,16119
+London,2008-01-01,21540
+South East,2008-01-01,18086
+South West,2008-01-01,15612
+North East,2009-01-01,13291
+North West,2009-01-01,14260
+Yorkshire and The Humber,2009-01-01,13784
+East Midlands,2009-01-01,14199
+West Midlands,2009-01-01,13873
+East,2009-01-01,16536
+London,2009-01-01,21431
+South East,2009-01-01,18443
+South West,2009-01-01,15699
+North East,2010-01-01,13509
+North West,2010-01-01,14378
+Yorkshire and The Humber,2010-01-01,13841
+East Midlands,2010-01-01,14221
+West Midlands,2010-01-01,14012
+East,2010-01-01,16657
+London,2010-01-01,21575
+South East,2010-01-01,18484
+South West,2010-01-01,16065
+North East,2011-01-01,13654
+North West,2011-01-01,14506
+Yorkshire and The Humber,2011-01-01,14067
+East Midlands,2011-01-01,14499
+West Midlands,2011-01-01,14188
+East,2011-01-01,16778
+London,2011-01-01,21391
+South East,2011-01-01,18661
+South West,2011-01-01,16312
+North East,2012-01-01,14227
+North West,2012-01-01,14972
+Yorkshire and The Humber,2012-01-01,14477
+East Midlands,2012-01-01,14981
+West Midlands,2012-01-01,14568
+East,2012-01-01,17370
+London,2012-01-01,22698
+South East,2012-01-01,19310
+South West,2012-01-01,16685
+North East,2013-01-01,14564
+North West,2013-01-01,15427
+Yorkshire and The Humber,2013-01-01,14883
+East Midlands,2013-01-01,15434
+West Midlands,2013-01-01,15057
+East,2013-01-01,17984
+London,2013-01-01,23906
+South East,2013-01-01,20083
+South West,2013-01-01,17306
+North East,2014-01-01,14959
+North West,2014-01-01,15828
+Yorkshire and The Humber,2014-01-01,15300
+East Midlands,2014-01-01,15913
+West Midlands,2014-01-01,15606
+East,2014-01-01,18537
+London,2014-01-01,24890
+South East,2014-01-01,20575
+South West,2014-01-01,17888
+North East,2015-01-01,15516
+North West,2015-01-01,16551
+Yorkshire and The Humber,2015-01-01,16021
+East Midlands,2015-01-01,16680
+West Midlands,2015-01-01,16391
+East,2015-01-01,19582
+London,2015-01-01,26652
+South East,2015-01-01,21790
+South West,2015-01-01,18686
+North East,2016-01-01,15718
+North West,2016-01-01,16664
+Yorkshire and The Humber,2016-01-01,16106
+East Midlands,2016-01-01,16703
+West Midlands,2016-01-01,16671
+East,2016-01-01,19882
+London,2016-01-01,27099
+South East,2016-01-01,22082
+South West,2016-01-01,18841
+North East,2017-01-01,16038
+North West,2017-01-01,17108
+Yorkshire and The Humber,2017-01-01,16582
+East Midlands,2017-01-01,17153
+West Midlands,2017-01-01,16915
+East,2017-01-01,20439
+London,2017-01-01,27599
+South East,2017-01-01,22624
+South West,2017-01-01,19265
+North East,2018-01-01,16474
+North West,2018-01-01,17629
+Yorkshire and The Humber,2018-01-01,17189
+East Midlands,2018-01-01,17635
+West Midlands,2018-01-01,17439
+East,2018-01-01,21185
+London,2018-01-01,29104
+South East,2018-01-01,23405
+South West,2018-01-01,19996
+North East,2019-01-01,16991
+North West,2019-01-01,18229
+Yorkshire and The Humber,2019-01-01,17693
+East Midlands,2019-01-01,18208
+West Midlands,2019-01-01,17910
+East,2019-01-01,21787
+London,2019-01-01,29719
+South East,2019-01-01,24148
+South West,2019-01-01,20725
+North East,2020-01-01,17239
+North West,2020-01-01,18372
+Yorkshire and The Humber,2020-01-01,17876
+East Midlands,2020-01-01,18444
+West Midlands,2020-01-01,18027
+East,2020-01-01,21613
+London,2020-01-01,29245
+South East,2020-01-01,23816
+South West,2020-01-01,20627
+North East,2021-01-01,17592
+North West,2021-01-01,18805
+Yorkshire and The Humber,2021-01-01,18347
+East Midlands,2021-01-01,18942
+West Midlands,2021-01-01,18507
+East,2021-01-01,22377
+London,2021-01-01,30662
+South East,2021-01-01,24606
+South West,2021-01-01,21304
+North East,2022-01-01,18388
+North West,2022-01-01,19752
+Yorkshire and The Humber,2022-01-01,19249
+East Midlands,2022-01-01,19879
+West Midlands,2022-01-01,19480
+East,2022-01-01,23661
+London,2022-01-01,32330
+South East,2022-01-01,26058
+South West,2022-01-01,22612
