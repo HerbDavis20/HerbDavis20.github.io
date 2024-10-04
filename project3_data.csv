@@ -1,172 +1,172 @@
 region ,date,value
-North East,2004-01-01,11470
-North West,2004-01-01,12215
-Yorkshire and The Humber,2004-01-01,12004
-East Midlands,2004-01-01,12309
-West Midlands,2004-01-01,12190
 East,2004-01-01,14026
-London,2004-01-01,17569
-South East,2004-01-01,15627
-South West,2004-01-01,13396
-North East,2005-01-01,11697
-North West,2005-01-01,12598
-Yorkshire and The Humber,2005-01-01,12302
-East Midlands,2005-01-01,12643
-West Midlands,2005-01-01,12391
 East,2005-01-01,14532
-London,2005-01-01,18587
-South East,2005-01-01,16185
-South West,2005-01-01,13901
-North East,2006-01-01,12121
-North West,2006-01-01,13014
-Yorkshire and The Humber,2006-01-01,12729
-East Midlands,2006-01-01,13052
-West Midlands,2006-01-01,12852
 East,2006-01-01,14977
-London,2006-01-01,19521
-South East,2006-01-01,16918
-South West,2006-01-01,14614
-North East,2007-01-01,12434
-North West,2007-01-01,13531
-Yorkshire and The Humber,2007-01-01,13247
-East Midlands,2007-01-01,13803
-West Midlands,2007-01-01,13201
 East,2007-01-01,15609
-London,2007-01-01,20924
-South East,2007-01-01,17730
-South West,2007-01-01,15134
-North East,2008-01-01,12721
-North West,2008-01-01,13756
-Yorkshire and The Humber,2008-01-01,13417
-East Midlands,2008-01-01,13968
-West Midlands,2008-01-01,13548
 East,2008-01-01,16119
-London,2008-01-01,21540
-South East,2008-01-01,18086
-South West,2008-01-01,15612
-North East,2009-01-01,13291
-North West,2009-01-01,14260
-Yorkshire and The Humber,2009-01-01,13784
-East Midlands,2009-01-01,14199
-West Midlands,2009-01-01,13873
 East,2009-01-01,16536
-London,2009-01-01,21431
-South East,2009-01-01,18443
-South West,2009-01-01,15699
-North East,2010-01-01,13509
-North West,2010-01-01,14378
-Yorkshire and The Humber,2010-01-01,13841
-East Midlands,2010-01-01,14221
-West Midlands,2010-01-01,14012
 East,2010-01-01,16657
-London,2010-01-01,21575
-South East,2010-01-01,18484
-South West,2010-01-01,16065
-North East,2011-01-01,13654
-North West,2011-01-01,14506
-Yorkshire and The Humber,2011-01-01,14067
-East Midlands,2011-01-01,14499
-West Midlands,2011-01-01,14188
 East,2011-01-01,16778
-London,2011-01-01,21391
-South East,2011-01-01,18661
-South West,2011-01-01,16312
-North East,2012-01-01,14227
-North West,2012-01-01,14972
-Yorkshire and The Humber,2012-01-01,14477
-East Midlands,2012-01-01,14981
-West Midlands,2012-01-01,14568
 East,2012-01-01,17370
-London,2012-01-01,22698
-South East,2012-01-01,19310
-South West,2012-01-01,16685
-North East,2013-01-01,14564
-North West,2013-01-01,15427
-Yorkshire and The Humber,2013-01-01,14883
-East Midlands,2013-01-01,15434
-West Midlands,2013-01-01,15057
 East,2013-01-01,17984
-London,2013-01-01,23906
-South East,2013-01-01,20083
-South West,2013-01-01,17306
-North East,2014-01-01,14959
-North West,2014-01-01,15828
-Yorkshire and The Humber,2014-01-01,15300
-East Midlands,2014-01-01,15913
-West Midlands,2014-01-01,15606
 East,2014-01-01,18537
-London,2014-01-01,24890
-South East,2014-01-01,20575
-South West,2014-01-01,17888
-North East,2015-01-01,15516
-North West,2015-01-01,16551
-Yorkshire and The Humber,2015-01-01,16021
-East Midlands,2015-01-01,16680
-West Midlands,2015-01-01,16391
 East,2015-01-01,19582
-London,2015-01-01,26652
-South East,2015-01-01,21790
-South West,2015-01-01,18686
-North East,2016-01-01,15718
-North West,2016-01-01,16664
-Yorkshire and The Humber,2016-01-01,16106
-East Midlands,2016-01-01,16703
-West Midlands,2016-01-01,16671
 East,2016-01-01,19882
-London,2016-01-01,27099
-South East,2016-01-01,22082
-South West,2016-01-01,18841
-North East,2017-01-01,16038
-North West,2017-01-01,17108
-Yorkshire and The Humber,2017-01-01,16582
-East Midlands,2017-01-01,17153
-West Midlands,2017-01-01,16915
 East,2017-01-01,20439
-London,2017-01-01,27599
-South East,2017-01-01,22624
-South West,2017-01-01,19265
-North East,2018-01-01,16474
-North West,2018-01-01,17629
-Yorkshire and The Humber,2018-01-01,17189
-East Midlands,2018-01-01,17635
-West Midlands,2018-01-01,17439
 East,2018-01-01,21185
-London,2018-01-01,29104
-South East,2018-01-01,23405
-South West,2018-01-01,19996
-North East,2019-01-01,16991
-North West,2019-01-01,18229
-Yorkshire and The Humber,2019-01-01,17693
-East Midlands,2019-01-01,18208
-West Midlands,2019-01-01,17910
 East,2019-01-01,21787
-London,2019-01-01,29719
-South East,2019-01-01,24148
-South West,2019-01-01,20725
-North East,2020-01-01,17239
-North West,2020-01-01,18372
-Yorkshire and The Humber,2020-01-01,17876
-East Midlands,2020-01-01,18444
-West Midlands,2020-01-01,18027
 East,2020-01-01,21613
-London,2020-01-01,29245
-South East,2020-01-01,23816
-South West,2020-01-01,20627
-North East,2021-01-01,17592
-North West,2021-01-01,18805
-Yorkshire and The Humber,2021-01-01,18347
-East Midlands,2021-01-01,18942
-West Midlands,2021-01-01,18507
 East,2021-01-01,22377
-London,2021-01-01,30662
-South East,2021-01-01,24606
-South West,2021-01-01,21304
-North East,2022-01-01,18388
-North West,2022-01-01,19752
-Yorkshire and The Humber,2022-01-01,19249
-East Midlands,2022-01-01,19879
-West Midlands,2022-01-01,19480
 East,2022-01-01,23661
+East Midlands,2004-01-01,12309
+East Midlands,2005-01-01,12643
+East Midlands,2006-01-01,13052
+East Midlands,2007-01-01,13803
+East Midlands,2008-01-01,13968
+East Midlands,2009-01-01,14199
+East Midlands,2010-01-01,14221
+East Midlands,2011-01-01,14499
+East Midlands,2012-01-01,14981
+East Midlands,2013-01-01,15434
+East Midlands,2014-01-01,15913
+East Midlands,2015-01-01,16680
+East Midlands,2016-01-01,16703
+East Midlands,2017-01-01,17153
+East Midlands,2018-01-01,17635
+East Midlands,2019-01-01,18208
+East Midlands,2020-01-01,18444
+East Midlands,2021-01-01,18942
+East Midlands,2022-01-01,19879
+London,2004-01-01,17569
+London,2005-01-01,18587
+London,2006-01-01,19521
+London,2007-01-01,20924
+London,2008-01-01,21540
+London,2009-01-01,21431
+London,2010-01-01,21575
+London,2011-01-01,21391
+London,2012-01-01,22698
+London,2013-01-01,23906
+London,2014-01-01,24890
+London,2015-01-01,26652
+London,2016-01-01,27099
+London,2017-01-01,27599
+London,2018-01-01,29104
+London,2019-01-01,29719
+London,2020-01-01,29245
+London,2021-01-01,30662
 London,2022-01-01,32330
+North East,2004-01-01,11470
+North East,2005-01-01,11697
+North East,2006-01-01,12121
+North East,2007-01-01,12434
+North East,2008-01-01,12721
+North East,2009-01-01,13291
+North East,2010-01-01,13509
+North East,2011-01-01,13654
+North East,2012-01-01,14227
+North East,2013-01-01,14564
+North East,2014-01-01,14959
+North East,2015-01-01,15516
+North East,2016-01-01,15718
+North East,2017-01-01,16038
+North East,2018-01-01,16474
+North East,2019-01-01,16991
+North East,2020-01-01,17239
+North East,2021-01-01,17592
+North East,2022-01-01,18388
+North West,2004-01-01,12215
+North West,2005-01-01,12598
+North West,2006-01-01,13014
+North West,2007-01-01,13531
+North West,2008-01-01,13756
+North West,2009-01-01,14260
+North West,2010-01-01,14378
+North West,2011-01-01,14506
+North West,2012-01-01,14972
+North West,2013-01-01,15427
+North West,2014-01-01,15828
+North West,2015-01-01,16551
+North West,2016-01-01,16664
+North West,2017-01-01,17108
+North West,2018-01-01,17629
+North West,2019-01-01,18229
+North West,2020-01-01,18372
+North West,2021-01-01,18805
+North West,2022-01-01,19752
+South East,2004-01-01,15627
+South East,2005-01-01,16185
+South East,2006-01-01,16918
+South East,2007-01-01,17730
+South East,2008-01-01,18086
+South East,2009-01-01,18443
+South East,2010-01-01,18484
+South East,2011-01-01,18661
+South East,2012-01-01,19310
+South East,2013-01-01,20083
+South East,2014-01-01,20575
+South East,2015-01-01,21790
+South East,2016-01-01,22082
+South East,2017-01-01,22624
+South East,2018-01-01,23405
+South East,2019-01-01,24148
+South East,2020-01-01,23816
+South East,2021-01-01,24606
 South East,2022-01-01,26058
+South West,2004-01-01,13396
+South West,2005-01-01,13901
+South West,2006-01-01,14614
+South West,2007-01-01,15134
+South West,2008-01-01,15612
+South West,2009-01-01,15699
+South West,2010-01-01,16065
+South West,2011-01-01,16312
+South West,2012-01-01,16685
+South West,2013-01-01,17306
+South West,2014-01-01,17888
+South West,2015-01-01,18686
+South West,2016-01-01,18841
+South West,2017-01-01,19265
+South West,2018-01-01,19996
+South West,2019-01-01,20725
+South West,2020-01-01,20627
+South West,2021-01-01,21304
 South West,2022-01-01,22612
+West Midlands,2004-01-01,12190
+West Midlands,2005-01-01,12391
+West Midlands,2006-01-01,12852
+West Midlands,2007-01-01,13201
+West Midlands,2008-01-01,13548
+West Midlands,2009-01-01,13873
+West Midlands,2010-01-01,14012
+West Midlands,2011-01-01,14188
+West Midlands,2012-01-01,14568
+West Midlands,2013-01-01,15057
+West Midlands,2014-01-01,15606
+West Midlands,2015-01-01,16391
+West Midlands,2016-01-01,16671
+West Midlands,2017-01-01,16915
+West Midlands,2018-01-01,17439
+West Midlands,2019-01-01,17910
+West Midlands,2020-01-01,18027
+West Midlands,2021-01-01,18507
+West Midlands,2022-01-01,19480
+Yorkshire and The Humber,2004-01-01,12004
+Yorkshire and The Humber,2005-01-01,12302
+Yorkshire and The Humber,2006-01-01,12729
+Yorkshire and The Humber,2007-01-01,13247
+Yorkshire and The Humber,2008-01-01,13417
+Yorkshire and The Humber,2009-01-01,13784
+Yorkshire and The Humber,2010-01-01,13841
+Yorkshire and The Humber,2011-01-01,14067
+Yorkshire and The Humber,2012-01-01,14477
+Yorkshire and The Humber,2013-01-01,14883
+Yorkshire and The Humber,2014-01-01,15300
+Yorkshire and The Humber,2015-01-01,16021
+Yorkshire and The Humber,2016-01-01,16106
+Yorkshire and The Humber,2017-01-01,16582
+Yorkshire and The Humber,2018-01-01,17189
+Yorkshire and The Humber,2019-01-01,17693
+Yorkshire and The Humber,2020-01-01,17876
+Yorkshire and The Humber,2021-01-01,18347
+Yorkshire and The Humber,2022-01-01,19249
