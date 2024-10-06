@@ -1,73 +1,85 @@
-region,skill level,percentage
-Newcastle upon Tyne,1,13.02
-Newcastle upon Tyne,2,29.74
-Newcastle upon Tyne,3,22.70
-Newcastle upon Tyne,4,34.54
-County Durham,1,13.25
-County Durham,2,35.18
-County Durham,3,28.52
-County Durham,4,23.05
-Manchester,1,14.19
-Manchester,2,31.09
-Manchester,3,21.19
-Manchester,4,33.54
-Liverpool,1,10.53
-Liverpool,2,34.63
-Liverpool,3,27.36
-Liverpool,4,27.48
-Blackburn with Darwen,1,12.51
-Blackburn with Darwen,2,42.23
-Blackburn with Darwen,3,23.54
-Blackburn with Darwen,4,21.72
-Leeds,1,11.60
-Leeds,2,30.62
-Leeds,3,28.15
-Leeds,4,29.63
-Sheffield,1,10.38
-Sheffield,2,31.09
-Sheffield,3,22.50
-Sheffield,4,36.02
-"Kingston upon Hull, City of",1,15.80
-"Kingston upon Hull, City of",2,39.86
-"Kingston upon Hull, City of",3,25.09
-"Kingston upon Hull, City of",4,19.24
-Nottingham,1,15.04
-Nottingham,2,36.64
-Nottingham,3,25.26
-Nottingham,4,23.06
-Leicester,1,16.04
-Leicester,2,38.42
-Leicester,3,22.11
-Leicester,4,23.44
-Birmingham,1,14.21
-Birmingham,2,35.49
-Birmingham,3,24.68
-Birmingham,4,25.62
-Coventry,1,12.42
-Coventry,2,33.80
-Coventry,3,25.76
-Coventry,4,28.03
-Cambridge,1,11.12
-Cambridge,2,20.36
-Cambridge,3,19.58
-Cambridge,4,48.94
-Norwich,1,18.88
-Norwich,2,29.26
-Norwich,3,23.41
-Norwich,4,28.46
-Oxford,1,13.98
-Oxford,2,18.50
-Oxford,3,25.46
-Oxford,4,42.06
-Brighton and Hove,1,8.51
-Brighton and Hove,2,26.54
-Brighton and Hove,3,28.44
-Brighton and Hove,4,36.51
-"Bristol, City of",1,10.37
-"Bristol, City of",2,27.30
-"Bristol, City of",3,25.41
-"Bristol, City of",4,36.93
-Plymouth,1,11.94
-Plymouth,2,35.71
-Plymouth,3,30.50
-Plymouth,4,21.85
+region,skill level,percentage,
+Newcastle upon Tyne,1,13.02,
+Newcastle upon Tyne,2,29.74,
+Newcastle upon Tyne,3,22.70,
+Newcastle upon Tyne,4,34.54,
+County Durham,1,13.25,
+County Durham,2,35.18,
+County Durham,3,28.52,
+County Durham,4,23.05,
+Manchester,1,14.19,
+Manchester,2,31.09,
+Manchester,3,21.19,
+Manchester,4,33.54,
+Liverpool,1,10.53,
+Liverpool,2,34.63,
+Liverpool,3,27.36,
+Liverpool,4,27.48,
+Blackburn with Darwen,1,12.51,
+Blackburn with Darwen,2,42.23,
+Blackburn with Darwen,3,23.54,
+Blackburn with Darwen,4,21.72,
+Leeds,1,11.60,
+Leeds,2,30.62,
+Leeds,3,28.15,
+Leeds,4,29.63,
+Sheffield,1,10.38,
+Sheffield,2,31.09,
+Sheffield,3,22.50,
+Sheffield,4,36.02,
+"Kingston upon Hull, City of",1,15.80,
+"Kingston upon Hull, City of",2,39.86,
+"Kingston upon Hull, City of",3,25.09,
+"Kingston upon Hull, City of",4,19.24,
+Nottingham,1,15.04,
+Nottingham,2,36.64,
+Nottingham,3,25.26,
+Nottingham,4,23.06,
+Leicester,1,16.04,
+Leicester,2,38.42,
+Leicester,3,22.11,
+Leicester,4,23.44,
+Birmingham,1,14.21,
+Birmingham,2,35.49,
+Birmingham,3,24.68,
+Birmingham,4,25.62,
+Coventry,1,12.42,
+Coventry,2,33.80,
+Coventry,3,25.76,
+Coventry,4,28.03,
+Cambridge,1,11.12,
+Cambridge,2,20.36,
+Cambridge,3,19.58,
+Cambridge,4,48.94,
+Norwich,1,18.88,
+Norwich,2,29.26,
+Norwich,3,23.41,
+Norwich,4,28.46,
+Oxford,1,13.98,
+Oxford,2,18.50,
+Oxford,3,25.46,
+Oxford,4,42.06,
+Brighton and Hove,1,8.51,
+Brighton and Hove,2,26.54,
+Brighton and Hove,3,28.44,
+Brighton and Hove,4,36.51,
+"Bristol, City of",1,10.37,
+"Bristol, City of",2,27.30,
+"Bristol, City of",3,25.41,
+"Bristol, City of",4,36.93,
+Plymouth,1,11.94,
+Plymouth,2,35.71,
+Plymouth,3,30.50,
+Plymouth,4,21.85,
+Hammersmith and Fulham,1,7.02,
+Hammersmith and Fulham,2,15.49,
+Hammersmith and Fulham,3,29.81,
+Hammersmith and Fulham,4,47.68,
+Richmond upon Thames,1,4.33,
+Richmond upon Thames,2,21.98,
+Richmond upon Thames,3,28.40,
+Richmond upon Thames,4,45.29,
+Westminster,1,2.47,
+Westminster,2,22.80,
+Westminster,3,28.29,
+Westminster,4,46.45,
