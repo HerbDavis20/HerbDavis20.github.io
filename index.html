@@ -10,8 +10,8 @@
 <!-- They can be used to leave notes in the code -->
 
 <!DOCTYPE html>
-<html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
+<html>
+<!-- HTML is heirarchial: tags like this define elements on the page. 
     Each tag does something different. For example:
         - The <html> tag defines the whole document.
         - The <h1> tag defines a large heading
@@ -19,7 +19,7 @@
         - Tags appear as an opening <div> and closing </div> pair
     -->
 
-<head>    
+<head>
     <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
 
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
@@ -36,13 +36,13 @@
         #chartGrid {
             display: flex;
         }
-        
     </style>
 </head>
 
-<body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+<body>
+    <!-- The body tag contains the elements that visitors to our page will see. -->
+    <h1 class="big" style="margin-bottom: 0px;">
+        <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
         Herb's Site - Data science
     </h1>
@@ -51,8 +51,10 @@
         Herb's Site | <a href="https://www.linkedin.com/in/herb-davis-6286b7212/">LinkedIn</a> | <a
             href="https://www.github.com/YOUR_GITHUB">GitHub</a>
     </p>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but make sure to customise it to make it your own, or even start from scratch.  
+    <h3 class="small">
+        <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but
+        make sure to customise it to make it your own, or even start from scratch.
     </h3>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
@@ -60,7 +62,8 @@
         <div class="chart-description">
             <h2>Section 1: A basic chart</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+                We've organised the page into sections, with each section containing a chart, title and a description.
+                Here, we can describe the chart and give some context.
                 As a first example, we're using a basic chart from our repo.
             </p>
         </div>
@@ -69,12 +72,12 @@
 
 
 
-<!--This is the new section i have created for the week 1 project. in here i need to embed 2 charts-->
+    <!--This is the new section i have created for the week 1 project. in here i need to embed 2 charts-->
     <section>
         <div class="chart-description">
             <h2>Week 1 Task: Embed 2 Charts</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                The first chart: 
+                The first chart:
             </p>
         </div>
         <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -85,96 +88,116 @@
         </p>
         <figure id="Location4"></figure>
     </section>
-    
-        <h2 style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-            <!-- This is a header, it is the largest text on the page -->
-            Week 2: Charts in Vega
-        </h2>
-        <h3>
-            Chart 1:
-        </h3>
-        <figure id="Location5" style="width: 100%; height: 400px;"></figure>
 
-        <h3>
-            Chart 2:
-            <figure id="Location6" style="width: 100%; height: 400px;"></figure>
+    <h2 style="margin-bottom: 0px;">
+        <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Week 2: Charts in Vega
+    </h2>
+    <h3>
+        Chart 1:
+    </h3>
+    <figure id="Location5" style="width: 100%; height: 400px;"></figure>
 
-        </h3>
-        <h2>
-            Week 3: Festival of Economics Data
-        </h2>
-        <p>
-            One argument that I found interesting from the festival of economics was the extent of spacial disparity in the labour markets across England. 
-        </p>
-        <figure id="Location7" style="width: 100%; height: 500px;"></figure>
+    <h3>
+        Chart 2:
+        <figure id="Location6" style="width: 100%; height: 400px;"></figure>
 
-        <figure id="Location8" style="width: 100%; height: 500px;"></figure>
+    </h3>
+    <h2>
+        Week 3: Festival of Economics Data
+    </h2>
+    <p>
+        One argument that I found interesting from the festival of economics was the extent of spacial disparity in the
+        labour markets across England.
+    </p>
+    <figure id="Location7" style="width: 100%; height: 500px;"></figure>
 
-        <p>
-            From these charts it's clear to see that the majority of the wealth and skilled labour collects in the south of engalnd and is particularly high in areas in London, proving that there is a high level of spacial disparity in the labour markets in England.
-        </p>
+    <figure id="Location8" style="width: 100%; height: 300px;"></figure>
+    <p>
+        From these charts it's clear to see that the majority of the wealth and skilled labour collects in the south of
+        engalnd and is particularly high in areas in London, proving that there is a high level of spacial disparity in
+        the labour markets in England.
+    </p>
+<section>
+
+</section>
+    <h2>
+        Week 4: Replication. Re-create, then improve, someone else’s chart
+    </h2>
+<img src="https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/screenshot_w4chart_FT.jpg" alt="Chart Image" width="500" height="300">
+
+<figure id="Location9" style="width: 700px; height: 200px;"></figure>
+
+<p>
+    Here I have changed the title and subtitle to be more descriptive of the chart. I have also added a 30 day moving average to make it easier to see the overall trend in the chart. I have also made the X-axis labels more clear. 
+</p>
 
     </section>
 
-   
 
     <section>
-    
 
 
-    <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-        //THIS IS THE CODE TO SOURCE THE CODE FOR THE CHART - WHAT THE LOCATION3 IS REFERING TO
 
-        let figure_3_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto12.json" ; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        <script>
+            // This is a comment in JavaScript - it's a different language to HTML and CSS
+            //THIS IS THE CODE TO SOURCE THE CODE FOR THE CHART - WHAT THE LOCATION3 IS REFERING TO
 
-        vegaEmbed('#Location3', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+            let figure_3_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto12.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+            vegaEmbed('#Location3', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
 
             // This is a comment in JavaScript - it's a different language to HTML and CSS
-    
-            let figure_4_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto7.json" ; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-    
+
+            let figure_4_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto7.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
             vegaEmbed('#Location4', figure_4_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-    
 
 
 
- 
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-
-        
-    let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/visualization.vl.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-        vegaEmbed('#Location5', figure_5_spec)
 
 
-    let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week2_chart_2.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+            // This is a comment in JavaScript - it's a different language to HTML and CSS
 
-     vegaEmbed('#Location6', figure_6_spec)  
+            let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-     // figures for week 3 project 
+            vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
-     let figure_7_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week3_chart1.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-     vegaEmbed('#Location7', figure_7_spec) 
+            let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/visualization.vl.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-     let figure_8_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W3_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+            vegaEmbed('#Location5', figure_5_spec)
 
-     vegaEmbed('#Location8', figure_8_spec) 
 
-    </script>
+            let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week2_chart_2.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+            vegaEmbed('#Location6', figure_6_spec)
+
+            // figures for week 3 project 
+
+            let figure_7_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week3_chart1.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+            vegaEmbed('#Location7', figure_7_spec)
+
+            let figure_8_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W3_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+            vegaEmbed('#Location8', figure_8_spec)
+
+            let figure_9_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W4_FTchartimprovements.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+            vegaEmbed('#Location9', figure_9_spec)
+
+        </script>
 
 
 
@@ -183,5 +206,5 @@
 
 
 </body>
-    
+
 </html>
