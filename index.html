@@ -119,21 +119,41 @@
         engalnd and is particularly high in areas in London, proving that there is a high level of spacial disparity in
         the labour markets in England.
     </p>
-<section>
+    <section>
 
-</section>
+    </section>
     <h2>
         Week 4: Replication. Re-create, then improve, someone else’s chart
     </h2>
-<img src="https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/screenshot_w4chart_FT.jpg" alt="Chart Image" width="500" height="300">
+    <img src="https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/screenshot_w4chart_FT.jpg"
+        alt="Chart Image" width="500" height="300">
 
-<figure id="Location9" style="width: 700px; height: 200px;"></figure>
+    <figure id="Location9" style="width: 700px; height: 200px;"></figure>
 
-<p>
-    Here I have changed the title and subtitle to be more descriptive of the chart. I have also added a 30 day moving average to make it easier to see the overall trend in the chart. I have also made the X-axis labels more clear. 
-</p>
+    <p>
+        Here I have changed the title and subtitle to be more descriptive of the chart. I have also added a 30 day
+        moving average to make it easier to see the overall trend in the chart. I have also made the X-axis labels more
+        clear.
+    </p>
 
-    </section>
+    <h2>
+        Week 5: Scraper. Implement a data scraper of your own
+    </h2>
+    <p>
+        <a href="https://colab.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing" target="_blank">Click here for Google Collab python notebook </a>
+    </p>
+    <p>
+        Chart created by scraping data from Wikipedia:
+    </p>
+    <figure id="Location10"></figure>
+
+    <p>
+        This chart shows the 9 countries with the largest population in the world. I chose Wikipedia as typically tables
+        in wikipedia are directly in the HTML file as tables rather than being written in java and included in the HTML
+        file. This allowed me to use the pd.read_HTML function in python.
+    </p>
+
+
 
 
     <section>
@@ -197,6 +217,10 @@
 
             vegaEmbed('#Location9', figure_9_spec)
 
+            let figure_10_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W5_chart_scraping.json"; // We're storing the URL of the graph we want to display in a variable
+            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+            vegaEmbed('#Location10', figure_10_spec)
         </script>
 
 
