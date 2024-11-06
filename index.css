@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
+  text-align: center;
   
 
 }
@@ -46,6 +47,7 @@ h2 {
 p {
   margin-bottom: 1em;
   font-weight: 300;
+  text-align: center;
 }
 
 section {
@@ -61,6 +63,13 @@ a {
   position: relative;
   color: rgb(54, 94, 70);
   transition: text-shadow 0.3s, color 0.3s ease;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 a:hover {
