@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Countries With the Highest Population",
+    "subtitle": "Population in Millions",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/population_data.csv"
+  },
+  "transform": [
+    {"filter": "datum.Location != 'World'"},
+    {"calculate": "datum.value / 1000000", "as": "value_in_millions"}
+  ],
+  "height": 300,
+  "width": 260,
+  "mark": {"type": "bar", "color": "#2b596ec2"},
+  "encoding": {
+    "x": {
+      "field": "Location",
+      "type": "nominal",
+      "axis": {"title": null, "grid": false, "ticks": false, "labelAngle": 45}
+    },
+    "y": {
+      "field": "value_in_millions",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}

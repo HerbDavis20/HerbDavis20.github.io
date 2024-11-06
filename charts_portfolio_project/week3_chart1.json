@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project3_data.csv"},
+  "title": "Gross Domestic Household Income per capita at current basic prices, pounds",
+  "mark": {
+    "type": "line",
+    "point": true
+    
+  },
+        "width": 500,
+    "height": 400,
+  "encoding": {
+    "x": {"timeUnit": "year", "field": "date"},
+    "y": {"field": "value", "type": "quantitative"},
+    "color": {"field": "region ", "type": "nominal"}
+  }
+}

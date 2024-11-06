@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "title": {
+      "text": "Expected Volatility in US Government Bonds",
+      "subtitle": "Bank of America MOVE (Merrill Option Volatility Estimate) Index ",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 10,
+      "font": "Helvetica Neue"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/simulated_data.csv"
+    },
+    "background": "#fff1e0",
+    "width": 500,
+    "height": 200,
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {"grid": false},
+        "title": "Date (Q4 23 - Q4 24)"
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "scale": {"domain": [90, 139]},
+        "axis": {
+          "title": null 
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "line", "color": "#364d9f"},
+        "encoding": {
+          "x": {"field": "date", "type": "temporal"},
+          "y": {"field": "value", "type": "quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {
+            "window": [
+              {
+                "op": "mean",  
+                "field": "value",
+                "as": "moving_average"
+              }
+            ],
+            "frame": [-30, 0]  
+          }
+        ],
+        "mark": {"type": "line", "color": "#ff6347", "strokeDash": [3,5]},  
+        "encoding": {
+          "x": {"field": "date", "type": "temporal"},
+          "y": {"field": "moving_average", "type": "quantitative"}
+        }
+      }
+    ]
+  }
+  
