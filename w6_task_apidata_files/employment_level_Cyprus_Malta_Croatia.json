@@ -1,0 +1,1338 @@
+{
+    "years": [],
+    "quarters": [
+        {
+            "date": "1997 Q1",
+            "value": "4",
+            "label": "1997 Q1",
+            "year": "1997",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1997 Q2",
+            "value": "6",
+            "label": "1997 Q2",
+            "year": "1997",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1997 Q3",
+            "value": "7",
+            "label": "1997 Q3",
+            "year": "1997",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1997 Q4",
+            "value": "9",
+            "label": "1997 Q4",
+            "year": "1997",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1998 Q1",
+            "value": "12",
+            "label": "1998 Q1",
+            "year": "1998",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1998 Q2",
+            "value": "14",
+            "label": "1998 Q2",
+            "year": "1998",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1998 Q3",
+            "value": "12",
+            "label": "1998 Q3",
+            "year": "1998",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1998 Q4",
+            "value": "12",
+            "label": "1998 Q4",
+            "year": "1998",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1999 Q1",
+            "value": "12",
+            "label": "1999 Q1",
+            "year": "1999",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1999 Q2",
+            "value": "13",
+            "label": "1999 Q2",
+            "year": "1999",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1999 Q3",
+            "value": "10",
+            "label": "1999 Q3",
+            "year": "1999",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "1999 Q4",
+            "value": "9",
+            "label": "1999 Q4",
+            "year": "1999",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2000 Q1",
+            "value": "9",
+            "label": "2000 Q1",
+            "year": "2000",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2000 Q2",
+            "value": "10",
+            "label": "2000 Q2",
+            "year": "2000",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2000 Q3",
+            "value": "12",
+            "label": "2000 Q3",
+            "year": "2000",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2000 Q4",
+            "value": "13",
+            "label": "2000 Q4",
+            "year": "2000",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2001 Q1",
+            "value": "10",
+            "label": "2001 Q1",
+            "year": "2001",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2001 Q2",
+            "value": "12",
+            "label": "2001 Q2",
+            "year": "2001",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2001 Q3",
+            "value": "9",
+            "label": "2001 Q3",
+            "year": "2001",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2001 Q4",
+            "value": "12",
+            "label": "2001 Q4",
+            "year": "2001",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2002 Q1",
+            "value": "12",
+            "label": "2002 Q1",
+            "year": "2002",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2002 Q2",
+            "value": "13",
+            "label": "2002 Q2",
+            "year": "2002",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2002 Q3",
+            "value": "12",
+            "label": "2002 Q3",
+            "year": "2002",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2002 Q4",
+            "value": "9",
+            "label": "2002 Q4",
+            "year": "2002",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2003 Q1",
+            "value": "7",
+            "label": "2003 Q1",
+            "year": "2003",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2003 Q2",
+            "value": "9",
+            "label": "2003 Q2",
+            "year": "2003",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2003 Q3",
+            "value": "8",
+            "label": "2003 Q3",
+            "year": "2003",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2003 Q4",
+            "value": "10",
+            "label": "2003 Q4",
+            "year": "2003",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2004 Q1",
+            "value": "9",
+            "label": "2004 Q1",
+            "year": "2004",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2004 Q2",
+            "value": "13",
+            "label": "2004 Q2",
+            "year": "2004",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2004 Q3",
+            "value": "11",
+            "label": "2004 Q3",
+            "year": "2004",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2004 Q4",
+            "value": "12",
+            "label": "2004 Q4",
+            "year": "2004",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2005 Q1",
+            "value": "12",
+            "label": "2005 Q1",
+            "year": "2005",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2005 Q2",
+            "value": "12",
+            "label": "2005 Q2",
+            "year": "2005",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2005 Q3",
+            "value": "10",
+            "label": "2005 Q3",
+            "year": "2005",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2005 Q4",
+            "value": "7",
+            "label": "2005 Q4",
+            "year": "2005",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2006 Q1",
+            "value": "8",
+            "label": "2006 Q1",
+            "year": "2006",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2006 Q2",
+            "value": "13",
+            "label": "2006 Q2",
+            "year": "2006",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2006 Q3",
+            "value": "8",
+            "label": "2006 Q3",
+            "year": "2006",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2006 Q4",
+            "value": "10",
+            "label": "2006 Q4",
+            "year": "2006",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2007 Q1",
+            "value": "6",
+            "label": "2007 Q1",
+            "year": "2007",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2007 Q2",
+            "value": "7",
+            "label": "2007 Q2",
+            "year": "2007",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2007 Q3",
+            "value": "5",
+            "label": "2007 Q3",
+            "year": "2007",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2007 Q4",
+            "value": "7",
+            "label": "2007 Q4",
+            "year": "2007",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2008 Q1",
+            "value": "8",
+            "label": "2008 Q1",
+            "year": "2008",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2008 Q2",
+            "value": "7",
+            "label": "2008 Q2",
+            "year": "2008",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2008 Q3",
+            "value": "8",
+            "label": "2008 Q3",
+            "year": "2008",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2008 Q4",
+            "value": "9",
+            "label": "2008 Q4",
+            "year": "2008",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2009 Q1",
+            "value": "8",
+            "label": "2009 Q1",
+            "year": "2009",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2009 Q2",
+            "value": "8",
+            "label": "2009 Q2",
+            "year": "2009",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2009 Q3",
+            "value": "10",
+            "label": "2009 Q3",
+            "year": "2009",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2009 Q4",
+            "value": "10",
+            "label": "2009 Q4",
+            "year": "2009",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2010 Q1",
+            "value": "12",
+            "label": "2010 Q1",
+            "year": "2010",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2010 Q2",
+            "value": "12",
+            "label": "2010 Q2",
+            "year": "2010",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2010 Q3",
+            "value": "10",
+            "label": "2010 Q3",
+            "year": "2010",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2010 Q4",
+            "value": "7",
+            "label": "2010 Q4",
+            "year": "2010",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2011 Q1",
+            "value": "8",
+            "label": "2011 Q1",
+            "year": "2011",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2011 Q2",
+            "value": "5",
+            "label": "2011 Q2",
+            "year": "2011",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2011 Q3",
+            "value": "7",
+            "label": "2011 Q3",
+            "year": "2011",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2011 Q4",
+            "value": "8",
+            "label": "2011 Q4",
+            "year": "2011",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2012 Q1",
+            "value": "11",
+            "label": "2012 Q1",
+            "year": "2012",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2012 Q2",
+            "value": "10",
+            "label": "2012 Q2",
+            "year": "2012",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2012 Q3",
+            "value": "13",
+            "label": "2012 Q3",
+            "year": "2012",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2012 Q4",
+            "value": "14",
+            "label": "2012 Q4",
+            "year": "2012",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2013 Q1",
+            "value": "9",
+            "label": "2013 Q1",
+            "year": "2013",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2013 Q2",
+            "value": "7",
+            "label": "2013 Q2",
+            "year": "2013",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2013 Q3",
+            "value": "7",
+            "label": "2013 Q3",
+            "year": "2013",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2013 Q4",
+            "value": "8",
+            "label": "2013 Q4",
+            "year": "2013",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2014 Q1",
+            "value": "9",
+            "label": "2014 Q1",
+            "year": "2014",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2014 Q2",
+            "value": "14",
+            "label": "2014 Q2",
+            "year": "2014",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2014 Q3",
+            "value": "11",
+            "label": "2014 Q3",
+            "year": "2014",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2014 Q4",
+            "value": "11",
+            "label": "2014 Q4",
+            "year": "2014",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2015 Q1",
+            "value": "10",
+            "label": "2015 Q1",
+            "year": "2015",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2015 Q2",
+            "value": "8",
+            "label": "2015 Q2",
+            "year": "2015",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2015 Q3",
+            "value": "11",
+            "label": "2015 Q3",
+            "year": "2015",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2015 Q4",
+            "value": "14",
+            "label": "2015 Q4",
+            "year": "2015",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2016 Q1",
+            "value": "17",
+            "label": "2016 Q1",
+            "year": "2016",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2016 Q2",
+            "value": "18",
+            "label": "2016 Q2",
+            "year": "2016",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2016 Q3",
+            "value": "13",
+            "label": "2016 Q3",
+            "year": "2016",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2016 Q4",
+            "value": "14",
+            "label": "2016 Q4",
+            "year": "2016",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2017 Q1",
+            "value": "14",
+            "label": "2017 Q1",
+            "year": "2017",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2017 Q2",
+            "value": "11",
+            "label": "2017 Q2",
+            "year": "2017",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2017 Q3",
+            "value": "8",
+            "label": "2017 Q3",
+            "year": "2017",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2017 Q4",
+            "value": "9",
+            "label": "2017 Q4",
+            "year": "2017",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2018 Q1",
+            "value": "11",
+            "label": "2018 Q1",
+            "year": "2018",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2018 Q2",
+            "value": "11",
+            "label": "2018 Q2",
+            "year": "2018",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2018 Q3",
+            "value": "11",
+            "label": "2018 Q3",
+            "year": "2018",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2018-11-13T00:00:00.000Z"
+        },
+        {
+            "date": "2018 Q4",
+            "value": "24",
+            "label": "2018 Q4",
+            "year": "2018",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2019-02-19T00:00:00.000Z"
+        },
+        {
+            "date": "2019 Q1",
+            "value": "16",
+            "label": "2019 Q1",
+            "year": "2019",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2019-05-13T23:00:00.000Z"
+        },
+        {
+            "date": "2019 Q2",
+            "value": "22",
+            "label": "2019 Q2",
+            "year": "2019",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2019-08-12T23:00:00.000Z"
+        },
+        {
+            "date": "2019 Q3",
+            "value": "21",
+            "label": "2019 Q3",
+            "year": "2019",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2019-11-12T00:00:00.000Z"
+        },
+        {
+            "date": "2019 Q4",
+            "value": "17",
+            "label": "2019 Q4",
+            "year": "2019",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2020-02-18T00:00:00.000Z"
+        },
+        {
+            "date": "2020 Q1",
+            "value": "",
+            "label": "2020 Q1",
+            "year": "2020",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-07-14T23:00:00.000Z"
+        },
+        {
+            "date": "2020 Q2",
+            "value": "",
+            "label": "2020 Q2",
+            "year": "2020",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-07-14T23:00:00.000Z"
+        },
+        {
+            "date": "2020 Q3",
+            "value": "",
+            "label": "2020 Q3",
+            "year": "2020",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-07-14T23:00:00.000Z"
+        },
+        {
+            "date": "2020 Q4",
+            "value": "",
+            "label": "2020 Q4",
+            "year": "2020",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-07-14T23:00:00.000Z"
+        },
+        {
+            "date": "2021 Q1",
+            "value": "",
+            "label": "2021 Q1",
+            "year": "2021",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-07-14T23:00:00.000Z"
+        },
+        {
+            "date": "2021 Q2",
+            "value": "",
+            "label": "2021 Q2",
+            "year": "2021",
+            "month": "",
+            "quarter": "Q2",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-08-16T23:00:00.000Z"
+        },
+        {
+            "date": "2021 Q3",
+            "value": "",
+            "label": "2021 Q3",
+            "year": "2021",
+            "month": "",
+            "quarter": "Q3",
+            "sourceDataset": "LMS",
+            "updateDate": "2021-11-16T00:00:00.000Z"
+        },
+        {
+            "date": "2021 Q4",
+            "value": "",
+            "label": "2021 Q4",
+            "year": "2021",
+            "month": "",
+            "quarter": "Q4",
+            "sourceDataset": "LMS",
+            "updateDate": "2022-02-15T00:00:00.000Z"
+        },
+        {
+            "date": "2022 Q1",
+            "value": "",
+            "label": "2022 Q1",
+            "year": "2022",
+            "month": "",
+            "quarter": "Q1",
+            "sourceDataset": "LMS",
+            "updateDate": "2022-05-16T23:00:00.000Z"
+        }
+    ],
+    "months": [],
+    "sourceDatasets": [],
+    "relatedDatasets": [
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics"
+        }
+    ],
+    "relatedDocuments": [
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest"
+        }
+    ],
+    "versions": [
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v1",
+            "updateDate": "2019-02-19T09:30:00.000Z",
+            "correctionNotice": "",
+            "label": "v1"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v2",
+            "updateDate": "2019-05-14T08:30:00.000Z",
+            "correctionNotice": "",
+            "label": "v2"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v3",
+            "updateDate": "2019-08-13T08:30:00.000Z",
+            "correctionNotice": "",
+            "label": "v3"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v4",
+            "updateDate": "2019-08-14T13:06:11.917Z",
+            "correctionNotice": "A minor processing error has been identified and corrected in the Labour market time series data. The error affected all employment by country of birth and nationality time series data for April to June 2019. The error was due to a processing issue and did not affect any of the release tables or other release products. We apologise for any inconvenience.",
+            "label": "v4"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v5",
+            "updateDate": "2019-11-12T09:30:00.000Z",
+            "correctionNotice": "",
+            "label": "v5"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v6",
+            "updateDate": "2020-02-18T09:30:00.000Z",
+            "correctionNotice": "",
+            "label": "v6"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v7",
+            "updateDate": "2020-05-19T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v7"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v8",
+            "updateDate": "2020-08-11T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v8"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v9",
+            "updateDate": "2020-11-10T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v9"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v10",
+            "updateDate": "2021-02-23T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v10"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v11",
+            "updateDate": "2021-05-18T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v11"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v12",
+            "updateDate": "2021-06-15T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v12"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v13",
+            "updateDate": "2021-07-15T05:23:12.637Z",
+            "correctionNotice": "",
+            "label": "v13"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v14",
+            "updateDate": "2021-08-17T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v14"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v15",
+            "updateDate": "2021-11-16T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v15"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v16",
+            "updateDate": "2022-02-15T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v16"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v17",
+            "updateDate": "2022-05-17T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v17"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v18",
+            "updateDate": "2022-06-14T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v18"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v19",
+            "updateDate": "2022-07-19T10:00:56.428Z",
+            "correctionNotice": "",
+            "label": "v19"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v20",
+            "updateDate": "2022-08-16T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v20"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v21",
+            "updateDate": "2022-09-13T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v21"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v22",
+            "updateDate": "2022-10-11T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v22"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v23",
+            "updateDate": "2022-11-15T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v23"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v24",
+            "updateDate": "2022-12-13T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v24"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v25",
+            "updateDate": "2023-01-17T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v25"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v26",
+            "updateDate": "2023-02-14T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v26"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v27",
+            "updateDate": "2023-03-14T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v27"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v28",
+            "updateDate": "2023-04-18T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v28"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v29",
+            "updateDate": "2023-05-16T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v29"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v30",
+            "updateDate": "2023-06-13T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v30"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v31",
+            "updateDate": "2023-07-11T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v31"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v32",
+            "updateDate": "2023-08-15T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v32"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v33",
+            "updateDate": "2023-09-12T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v33"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v34",
+            "updateDate": "2023-09-12T10:18:22.466Z",
+            "correctionNotice": "An issue was spotted with the July 2020 total average weekly earnings data in our EMP and LMS time series data. We have now corrected this issue. The Average Weekly Earnings bulletin and datasets were not impacted by this issue. The ONS apologies for the inconvenience.",
+            "label": "v34"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v35",
+            "updateDate": "2023-11-14T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v35"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v36",
+            "updateDate": "2023-11-17T12:06:16.925Z",
+            "correctionNotice": "",
+            "label": "v36"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v37",
+            "updateDate": "2023-12-04T15:54:26.335Z",
+            "correctionNotice": "",
+            "label": "v37"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v38",
+            "updateDate": "2023-12-12T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v38"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v39",
+            "updateDate": "2024-01-16T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v39"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v40",
+            "updateDate": "2024-02-13T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v40"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v41",
+            "updateDate": "2024-03-12T07:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v41"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v42",
+            "updateDate": "2024-04-16T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v42"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v43",
+            "updateDate": "2024-05-14T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v43"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v44",
+            "updateDate": "2024-06-11T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v44"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v45",
+            "updateDate": "2024-07-18T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v45"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v46",
+            "updateDate": "2024-08-13T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v46"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v47",
+            "updateDate": "2024-09-10T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v47"
+        },
+        {
+            "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms/previous/v48",
+            "updateDate": "2024-10-15T06:00:00.000Z",
+            "correctionNotice": "",
+            "label": "v48"
+        }
+    ],
+    "type": "timeseries",
+    "uri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/fsc9/lms",
+    "description": {
+        "title": "Employment levels by nationality (16+) - Other EU-Cyprus, Malta and Croatia",
+        "contact": {
+            "email": "labour.market@ons.gov.uk",
+            "name": "ONS Labour Market Team",
+            "telephone": "+44 1633 455400"
+        },
+        "releaseDate": "2024-10-14T23:00:00.000Z",
+        "nextRelease": "12 November 2024",
+        "datasetId": "LMS",
+        "datasetUri": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics",
+        "cdid": "FSC9",
+        "unit": "",
+        "preUnit": "",
+        "source": "",
+        "date": "2019 Q4",
+        "number": "17",
+        "sampleSize": "0"
+    }
+}
