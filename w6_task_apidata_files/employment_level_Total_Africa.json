@@ -1,1 +1,1012 @@
-[]
+[
+    {
+        "date": "1997 Q1",
+        "value": "64.0",
+        "label": "1997 Q1",
+        "year": "1997",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1997 Q2",
+        "value": "64.7",
+        "label": "1997 Q2",
+        "year": "1997",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1997 Q3",
+        "value": "64.0",
+        "label": "1997 Q3",
+        "year": "1997",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1997 Q4",
+        "value": "63.5",
+        "label": "1997 Q4",
+        "year": "1997",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1998 Q1",
+        "value": "64.5",
+        "label": "1998 Q1",
+        "year": "1998",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1998 Q2",
+        "value": "66.7",
+        "label": "1998 Q2",
+        "year": "1998",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1998 Q3",
+        "value": "68.1",
+        "label": "1998 Q3",
+        "year": "1998",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1998 Q4",
+        "value": "69.0",
+        "label": "1998 Q4",
+        "year": "1998",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1999 Q1",
+        "value": "67.7",
+        "label": "1999 Q1",
+        "year": "1999",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1999 Q2",
+        "value": "67.4",
+        "label": "1999 Q2",
+        "year": "1999",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1999 Q3",
+        "value": "67.5",
+        "label": "1999 Q3",
+        "year": "1999",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "1999 Q4",
+        "value": "68.2",
+        "label": "1999 Q4",
+        "year": "1999",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2000 Q1",
+        "value": "67.3",
+        "label": "2000 Q1",
+        "year": "2000",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2000 Q2",
+        "value": "65.2",
+        "label": "2000 Q2",
+        "year": "2000",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2000 Q3",
+        "value": "66.3",
+        "label": "2000 Q3",
+        "year": "2000",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2000 Q4",
+        "value": "67.8",
+        "label": "2000 Q4",
+        "year": "2000",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2001 Q1",
+        "value": "67.1",
+        "label": "2001 Q1",
+        "year": "2001",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2001 Q2",
+        "value": "67.5",
+        "label": "2001 Q2",
+        "year": "2001",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2001 Q3",
+        "value": "68.7",
+        "label": "2001 Q3",
+        "year": "2001",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2001 Q4",
+        "value": "66.3",
+        "label": "2001 Q4",
+        "year": "2001",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2002 Q1",
+        "value": "64.9",
+        "label": "2002 Q1",
+        "year": "2002",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2002 Q2",
+        "value": "65.7",
+        "label": "2002 Q2",
+        "year": "2002",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2002 Q3",
+        "value": "65.4",
+        "label": "2002 Q3",
+        "year": "2002",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2002 Q4",
+        "value": "65.5",
+        "label": "2002 Q4",
+        "year": "2002",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2003 Q1",
+        "value": "67.3",
+        "label": "2003 Q1",
+        "year": "2003",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2003 Q2",
+        "value": "66.0",
+        "label": "2003 Q2",
+        "year": "2003",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2003 Q3",
+        "value": "69.2",
+        "label": "2003 Q3",
+        "year": "2003",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2003 Q4",
+        "value": "66.8",
+        "label": "2003 Q4",
+        "year": "2003",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2004 Q1",
+        "value": "67.3",
+        "label": "2004 Q1",
+        "year": "2004",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2004 Q2",
+        "value": "65.8",
+        "label": "2004 Q2",
+        "year": "2004",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2004 Q3",
+        "value": "66.9",
+        "label": "2004 Q3",
+        "year": "2004",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2004 Q4",
+        "value": "67.2",
+        "label": "2004 Q4",
+        "year": "2004",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2005 Q1",
+        "value": "68.1",
+        "label": "2005 Q1",
+        "year": "2005",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2005 Q2",
+        "value": "64.9",
+        "label": "2005 Q2",
+        "year": "2005",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2005 Q3",
+        "value": "67.1",
+        "label": "2005 Q3",
+        "year": "2005",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2005 Q4",
+        "value": "67.8",
+        "label": "2005 Q4",
+        "year": "2005",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2006 Q1",
+        "value": "67.5",
+        "label": "2006 Q1",
+        "year": "2006",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2006 Q2",
+        "value": "67.3",
+        "label": "2006 Q2",
+        "year": "2006",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2006 Q3",
+        "value": "67.2",
+        "label": "2006 Q3",
+        "year": "2006",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2006 Q4",
+        "value": "69.5",
+        "label": "2006 Q4",
+        "year": "2006",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2007 Q1",
+        "value": "67.4",
+        "label": "2007 Q1",
+        "year": "2007",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2007 Q2",
+        "value": "67.2",
+        "label": "2007 Q2",
+        "year": "2007",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2007 Q3",
+        "value": "68.6",
+        "label": "2007 Q3",
+        "year": "2007",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2007 Q4",
+        "value": "69.0",
+        "label": "2007 Q4",
+        "year": "2007",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2008 Q1",
+        "value": "69.4",
+        "label": "2008 Q1",
+        "year": "2008",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2008 Q2",
+        "value": "69.2",
+        "label": "2008 Q2",
+        "year": "2008",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2008 Q3",
+        "value": "67.7",
+        "label": "2008 Q3",
+        "year": "2008",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2008 Q4",
+        "value": "66.0",
+        "label": "2008 Q4",
+        "year": "2008",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2009 Q1",
+        "value": "63.9",
+        "label": "2009 Q1",
+        "year": "2009",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2009 Q2",
+        "value": "61.9",
+        "label": "2009 Q2",
+        "year": "2009",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2009 Q3",
+        "value": "61.9",
+        "label": "2009 Q3",
+        "year": "2009",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2009 Q4",
+        "value": "62.7",
+        "label": "2009 Q4",
+        "year": "2009",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2010 Q1",
+        "value": "64.1",
+        "label": "2010 Q1",
+        "year": "2010",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2010 Q2",
+        "value": "63.7",
+        "label": "2010 Q2",
+        "year": "2010",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2010 Q3",
+        "value": "65.0",
+        "label": "2010 Q3",
+        "year": "2010",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2010 Q4",
+        "value": "65.7",
+        "label": "2010 Q4",
+        "year": "2010",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2011 Q1",
+        "value": "64.7",
+        "label": "2011 Q1",
+        "year": "2011",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2011 Q2",
+        "value": "64.1",
+        "label": "2011 Q2",
+        "year": "2011",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2011 Q3",
+        "value": "64.4",
+        "label": "2011 Q3",
+        "year": "2011",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2011 Q4",
+        "value": "63.3",
+        "label": "2011 Q4",
+        "year": "2011",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2012 Q1",
+        "value": "63.0",
+        "label": "2012 Q1",
+        "year": "2012",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2012 Q2",
+        "value": "65.9",
+        "label": "2012 Q2",
+        "year": "2012",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2012 Q3",
+        "value": "65.5",
+        "label": "2012 Q3",
+        "year": "2012",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2012 Q4",
+        "value": "64.7",
+        "label": "2012 Q4",
+        "year": "2012",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2013 Q1",
+        "value": "65.5",
+        "label": "2013 Q1",
+        "year": "2013",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2013 Q2",
+        "value": "65.8",
+        "label": "2013 Q2",
+        "year": "2013",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2013 Q3",
+        "value": "63.5",
+        "label": "2013 Q3",
+        "year": "2013",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z"
+    },
+    {
+        "date": "2013 Q4",
+        "value": "66.2",
+        "label": "2013 Q4",
+        "year": "2013",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2014 Q1",
+        "value": "66.1",
+        "label": "2014 Q1",
+        "year": "2014",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2014 Q2",
+        "value": "66.3",
+        "label": "2014 Q2",
+        "year": "2014",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2014 Q3",
+        "value": "67.8",
+        "label": "2014 Q3",
+        "year": "2014",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2014 Q4",
+        "value": "66.6",
+        "label": "2014 Q4",
+        "year": "2014",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2015 Q1",
+        "value": "69.0",
+        "label": "2015 Q1",
+        "year": "2015",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2015 Q2",
+        "value": "66.5",
+        "label": "2015 Q2",
+        "year": "2015",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2015 Q3",
+        "value": "67.5",
+        "label": "2015 Q3",
+        "year": "2015",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2015 Q4",
+        "value": "67.6",
+        "label": "2015 Q4",
+        "year": "2015",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2016 Q1",
+        "value": "68.6",
+        "label": "2016 Q1",
+        "year": "2016",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2016 Q2",
+        "value": "71.0",
+        "label": "2016 Q2",
+        "year": "2016",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2016 Q3",
+        "value": "72.2",
+        "label": "2016 Q3",
+        "year": "2016",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2016 Q4",
+        "value": "74.1",
+        "label": "2016 Q4",
+        "year": "2016",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2017 Q1",
+        "value": "70.8",
+        "label": "2017 Q1",
+        "year": "2017",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2017 Q2",
+        "value": "72.4",
+        "label": "2017 Q2",
+        "year": "2017",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z"
+    },
+    {
+        "date": "2017 Q3",
+        "value": "71.5",
+        "label": "2017 Q3",
+        "year": "2017",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2017 Q4",
+        "value": "70.9",
+        "label": "2017 Q4",
+        "year": "2017",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2018 Q1",
+        "value": "71.6",
+        "label": "2018 Q1",
+        "year": "2018",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z"
+    },
+    {
+        "date": "2018 Q2",
+        "value": "72.1",
+        "label": "2018 Q2",
+        "year": "2018",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2018 Q3",
+        "value": "72.9",
+        "label": "2018 Q3",
+        "year": "2018",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2018-11-13T00:00:00.000Z"
+    },
+    {
+        "date": "2018 Q4",
+        "value": "73.3",
+        "label": "2018 Q4",
+        "year": "2018",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-02-19T00:00:00.000Z"
+    },
+    {
+        "date": "2019 Q1",
+        "value": "73.1",
+        "label": "2019 Q1",
+        "year": "2019",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-05-13T23:00:00.000Z"
+    },
+    {
+        "date": "2019 Q2",
+        "value": "73.2",
+        "label": "2019 Q2",
+        "year": "2019",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-08-12T23:00:00.000Z"
+    },
+    {
+        "date": "2019 Q3",
+        "value": "74.9",
+        "label": "2019 Q3",
+        "year": "2019",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2019-11-12T00:00:00.000Z"
+    },
+    {
+        "date": "2019 Q4",
+        "value": "74.2",
+        "label": "2019 Q4",
+        "year": "2019",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2020-02-18T00:00:00.000Z"
+    },
+    {
+        "date": "2020 Q1",
+        "value": "",
+        "label": "2020 Q1",
+        "year": "2020",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z"
+    },
+    {
+        "date": "2020 Q2",
+        "value": "",
+        "label": "2020 Q2",
+        "year": "2020",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z"
+    },
+    {
+        "date": "2020 Q3",
+        "value": "",
+        "label": "2020 Q3",
+        "year": "2020",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z"
+    },
+    {
+        "date": "2020 Q4",
+        "value": "",
+        "label": "2020 Q4",
+        "year": "2020",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z"
+    },
+    {
+        "date": "2021 Q1",
+        "value": "",
+        "label": "2021 Q1",
+        "year": "2021",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-07-14T23:00:00.000Z"
+    },
+    {
+        "date": "2021 Q2",
+        "value": "",
+        "label": "2021 Q2",
+        "year": "2021",
+        "month": "",
+        "quarter": "Q2",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-08-16T23:00:00.000Z"
+    },
+    {
+        "date": "2021 Q3",
+        "value": "",
+        "label": "2021 Q3",
+        "year": "2021",
+        "month": "",
+        "quarter": "Q3",
+        "sourceDataset": "LMS",
+        "updateDate": "2021-11-16T00:00:00.000Z"
+    },
+    {
+        "date": "2021 Q4",
+        "value": "",
+        "label": "2021 Q4",
+        "year": "2021",
+        "month": "",
+        "quarter": "Q4",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-02-15T00:00:00.000Z"
+    },
+    {
+        "date": "2022 Q1",
+        "value": "",
+        "label": "2022 Q1",
+        "year": "2022",
+        "month": "",
+        "quarter": "Q1",
+        "sourceDataset": "LMS",
+        "updateDate": "2022-05-16T23:00:00.000Z"
+    }
+]
