@@ -70,7 +70,7 @@
         <h3>
             <figure id="Location1" style="width: 70%; height: 400px;"></figure>
         </h3>
-         <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
 
@@ -120,11 +120,11 @@
         labour markets across England.
     </p>
 
-<h3>
-    <figure id="Location7" style="width: 100%; height: 500px;"></figure>
+    <h3>
+        <figure id="Location7" style="width: 100%; height: 500px;"></figure>
 
-    <figure id="Location8" style="width: 100%; height: 300px;"></figure>
-</h3>
+        <figure id="Location8" style="width: 100%; height: 300px;"></figure>
+    </h3>
     <p>
         From these charts it's clear to see that the majority of the wealth and skilled labour collects in the south of
         engalnd and is particularly high in areas in London, proving that there is a high level of spacial disparity in
@@ -139,10 +139,10 @@
     <img src="https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/screenshot_w4chart_FT.jpg"
         alt="Chart Image" width="500" height="300">
 
-  <h3>
-    <figure id="Location9" style="width: 700px; height: 200px;"></figure>
+    <h3>
+        <figure id="Location9" style="width: 700px; height: 200px;"></figure>
 
-  </h3>
+    </h3>
     <p>
         Here I have changed the title and subtitle to be more descriptive of the chart. I have also added a 30 day
         moving average to make it easier to see the overall trend in the chart. I have also made the X-axis labels more
@@ -153,94 +153,237 @@
         Week 5: Scraper. Implement a data scraper of your own
     </h2>
     <p>
-        <a href="https://colab.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing" target="_blank">Click here for Google Collab python notebook </a>
+        <a href="https://colab.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing"
+            target="_blank">Click here for Google Collab python notebook </a>
     </p>
     <p>
         Chart created by scraping data from Wikipedia:
     </p>
-   <h3>
-    <figure id="Location10"></figure>
+    <h3>
+        <figure id="Location10"></figure>
 
-   </h3>
+    </h3>
     <p>
         This chart shows the 9 countries with the largest population in the world. I chose Wikipedia as typically tables
         in wikipedia are directly in the HTML file as tables rather than being written in java and included in the HTML
         file. This allowed me to use the pd.read_HTML function in python.
     </p>
 
-<section>
-    <h3>
-        week 6: Loops. Build a dashboard
-    </h3>
-    
-
-</section>
-
-
-
-
-        <script>
-            // This is a comment in JavaScript - it's a different language to HTML and CSS
-            //THIS IS THE CODE TO SOURCE THE CODE FOR THE CHART - WHAT THE LOCATION3 IS REFERING TO
-
-            let figure_3_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto12.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-            vegaEmbed('#Location3', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-
-
-            // This is a comment in JavaScript - it's a different language to HTML and CSS
-
-            let figure_4_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto7.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-            vegaEmbed('#Location4', figure_4_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+    <section>
+        <h3>
+            week 6: Loops. Build a dashboard
 
 
 
 
 
-            // This is a comment in JavaScript - it's a different language to HTML and CSS
+    </section>
+    <!--'Romania_Bulgaria', 'Total_Africa', 'India', 'Asia', 'South_Africa', 'Pakistan_Bangladesh', 'Australia_New_Zealand', 'USA', 'Cyprus_Malta_Croatia'-->
 
-            let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+    <section>
+        <H3>
+            Week 8: Looping with APIs
+        </H3>
 
-            vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+        <p>
+            This week I created a program to batch download data for various countries' employment levels using the ONS API, using
+            loops allow many downloads to occur at once. Then in python I could use loops again to convert these
+            datasets into individual charts for each country data.
+        </p>
+        <p>
+            <a href="https://colab.research.google.com/drive/1f-p6MIrKNIF_1NezankERkETnQQclJMB?usp=sharing"
+            target="_blank">Click here for Google Collab python notebook </a>
+
+        
+        </p>
 
 
-            let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/visualization.vl.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-            vegaEmbed('#Location5', figure_5_spec)
+    </section>
 
 
-            let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week2_chart_2.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+    <div class="grid-container">
+        <div class="grid-item" id="chart-Romania_Bulgaria"></div>
+        <div class="grid-item" id="chart-Total_Africa"></div>
+        <div class="grid-item" id="chart-India"></div>
+        <div class="grid-item" id="chart-Asia"></div>
+        <div class="grid-item" id="chart-South_Africa"></div>
+        <div class="grid-item" id="chart-Pakistan_Bangladesh"></div>
+        <div class="grid-item" id="chart-Australia_New_Zealand"></div>
+        <div class="grid-item" id="chart-USA"></div>
+        <div class="grid-item" id="chart-Cyprus_Malta_Croatia"></div>
+    </div>
 
-            vegaEmbed('#Location6', figure_6_spec)
 
-            // figures for week 3 project 
 
-            let figure_7_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week3_chart1.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-            vegaEmbed('#Location7', figure_7_spec)
+    <script>
+        const charts = [
+            {
+                id: 'chart-Romania_Bulgaria',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_Romania_Bulgaria.json',
+                subtitle: 'Romania & Bulgaria'
+            },
+            {
+                id: 'chart-Total_Africa',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_Total_Africa.json',
+                subtitle: 'Africa'
+            },
+            {
+                id: 'chart-India',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_India.json',
+                subtitle: 'India'
+            },
+            {
+                id: 'chart-Asia',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_Asia.json',
+                subtitle: 'Asia'
+            },
+            {
+                id: 'chart-South_Africa',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_South_Africa.json',
+                subtitle: 'South Africa'
+            },
+            {
+                id: 'chart-Pakistan_Bangladesh',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_Pakistan_Bangladesh.json',
+                subtitle: 'Pakistan & Bangladesh'
+            },
+            {
+                id: 'chart-Australia_New_Zealand',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_Australia_New_Zealand.json',
+                subtitle: 'Australia & New Zealand'
+            },
+            {
+                id: 'chart-USA',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_USA.json',
+                subtitle: 'USA'
+            },
+            {
+                id: 'chart-Cyprus_Malta_Croatia',
+                url: 'https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/w6_task_apidata_files/employment_level_Cyprus_Malta_Croatia.json',
+                subtitle: 'Cyprus, Malta & Croatia'
+            }
+        ];
 
-            let figure_8_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W3_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-            vegaEmbed('#Location8', figure_8_spec)
+        charts.forEach(chart => {
+            const spec = {
+                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                "title": {
+                    "text": "Employment level",
+                    "subtitle": chart.subtitle
+                },
+                "width": 159,
+                "height": 150,
+                "data": {
+                    "url": chart.url
+                },
+                "transform": [
+                    {
+                        "filter": "datum.date <= '2019-12-31'"
+                    }
+                ],
+                "mark": {
+                    "type": "line",
+                    "color": "red"
+                },
+                "encoding": {
+                    "x": {
+                        "field": "date",
+                        "type": "nominal",
+                        "axis": {
+                            "title": "Date1",  // Add custom title for x-axis
+                            "labelOverlap": "greedy",
+                            "labelAngle": -45
+                        }
+                    },
+                    "y": {
+                        "field": "value",
+                        "type": "quantitative",
+                        "axis": {
+                            "title": "Employment Level (Millions)"   // Add custom title for y-axis
+                        }
+                    }
+                }
+            };
 
-            let figure_9_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W4_FTchartimprovements.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+            vegaEmbed(`#${chart.id}`, spec);
+        });
 
-            vegaEmbed('#Location9', figure_9_spec)
 
-            let figure_10_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W5_chart_scraping.json"; // We're storing the URL of the graph we want to display in a variable
-            // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-            vegaEmbed('#Location10', figure_10_spec)
-        </script>
+
+
+
+    </script>
+
+
+
+    <script>
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+        //THIS IS THE CODE TO SOURCE THE CODE FOR THE CHART - WHAT THE LOCATION3 IS REFERING TO
+
+        let figure_3_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto12.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location3', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+
+
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+
+        let figure_4_spec = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/chartcrypto7.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location4', figure_4_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+
+
+
+
+
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+
+        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+
+
+        let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/visualization.vl.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location5', figure_5_spec)
+
+
+        let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week2_chart_2.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location6', figure_6_spec)
+
+        // figures for week 3 project 
+
+        let figure_7_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/week3_chart1.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location7', figure_7_spec)
+
+        let figure_8_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W3_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location8', figure_8_spec)
+
+        let figure_9_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W4_FTchartimprovements.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location9', figure_9_spec)
+
+        let figure_10_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W5_chart_scraping.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location10', figure_10_spec)
+
+
+    </script>
 
 
 
