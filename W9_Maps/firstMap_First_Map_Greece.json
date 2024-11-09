@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Map of Greece",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Kntalaris/gr-topo/main/greece-prefectures-topojson.json",
+    "format": {"type": "topojson", "feature": "greece-prefectures"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.5,
+    "color": "#8fa1a3 "
+  },
+  "encoding": {
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "region"}
+    ]
+  },
+  "config": {}
+}
