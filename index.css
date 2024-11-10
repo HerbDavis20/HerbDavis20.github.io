@@ -19,6 +19,36 @@ body { /* We can style any HTML element by using its name - here we're styling t
 }
 
 
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Pushes title left, buttons right */
+  align-items: center; /* Centers vertically within header */
+  padding: 10px 10px 1px 10px;
+  margin-bottom: 20px;
+
+}
+
+.site-title {
+  font-size: 2.5em;
+  margin: 0;
+  color: #ffffff;
+  text-align: left;
+}
+
+.site-links {
+  font-size: 1.5em;
+  margin-top: 5px; /* Adjust spacing between title and links */
+  color: rgb(255, 255, 255);
+  text-align: left; /* Ensures links align left */
+}
+
+.site-links a {
+  color: rgb(123, 123, 123); /* Link color */
+  text-decoration: none;
+}
+
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
@@ -50,7 +80,7 @@ h2 {
 }
 
 .small {
-  font-size: 1.25em;
+  font-size: 2em;
 }
 
 
@@ -58,12 +88,13 @@ p {
   margin-bottom: 1em;
   font-weight: 300;
   text-align: center;
+  font-size: 1.4em;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
   flex-wrap: wrap;
   padding: 15px 0;
 }
@@ -71,16 +102,16 @@ p {
 .nav-button {
   padding: 15px 30px;
   font-size: 1.2em; 
-  color: #24317d;
+  color: #9e9e9e;
   text-decoration: none;
-  border: 3px solid #24317d; 
+  border: 3px solid #9e9e9e; 
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-button:hover {
-  background-color: #24317d; /* Background on hover */
+  background-color: #2f2f2f; /* Background on hover */
   color: #f2e8c2; /* Text color on hover */
 }
 
@@ -166,3 +197,4 @@ h1 {
     font-size: 0.9em;
   }
 }
+

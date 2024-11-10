@@ -41,28 +41,28 @@
 
 <body>
     <!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;">
-        <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Herb's Site - Data science
-    </h1>
-    <p style="margin-top: 0px; color: rgb(240, 240, 241)">
+    <header class="header-container">
+        <h1 class="site-title">Herb Davis - Data Science</h1>
+        <nav class="navbar">
+            <a href="project.html" class="nav-button">Project</a>
+            <a href="page2.html" class="nav-button">Portfolio</a>
+            <a href="page3.html" class="nav-button">Page 3</a>
+        </nav>
+    </header>
+    
+    
+    <p class="site-links">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Herb's Site | <a href="https://www.linkedin.com/in/herb-davis-6286b7212/">LinkedIn</a> | <a
+        Find Me: | <a href="https://www.linkedin.com/in/herb-davis-6286b7212/">LinkedIn</a> | <a
             href="https://www.github.com/YOUR_GITHUB">GitHub</a>
     </p>
 
-    <nav class="navbar">
-        <a href="page1.html" class="nav-button">Page 1</a>
-        <a href="page2.html" class="nav-button">Page 2</a>
-        <a href="page3.html" class="nav-button">Page 3</a>
-    </nav>
-    
-    <h3 class="small">
+
+ 
+    <h2 class="small">
         <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but
-        make sure to customise it to make it your own, or even start from scratch.
-    </h3>
+       Portfolio
+    </h2>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
@@ -113,12 +113,17 @@
         <h3>
             Chart 1:
         </h3>
-        <figure id="Location5" style="width: 100%; height: 400px;"></figure>
-    
+
+        <h3>
+            <figure id="Location5" style="width: 700px; height: 200px;"></figure>
+        </h3>
+        
+
         <h3>
             Chart 2:
-            <figure id="Location6" style="width: 100%; height: 400px;"></figure>
-    
+        </h3>
+        <h3>
+            <figure id="Location6" style="width: 700px; height: 200px;"></figure>
         </h3>
     </section>
 
@@ -154,7 +159,7 @@
             alt="Chart Image" width="500" height="300">
     
         <h3>
-            <figure id="Location9" style="width: 700px; height: 200px;"></figure>
+            <figure id="Location9" style="width: 530px; height: 200px;"></figure>
     
         </h3>
         <p>
