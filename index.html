@@ -186,48 +186,55 @@
         </H3>
 
         <p>
-            This week I created a program to batch download data for various countries' employment levels using the ONS API, using
+            This week I created a program to batch download data for various countries' employment levels using the ONS
+            API, using
             loops allow many downloads to occur at once. Then in python I could use loops again to convert these
             datasets into individual charts for each country data.
         </p>
         <p>
             <a href="https://colab.research.google.com/drive/1f-p6MIrKNIF_1NezankERkETnQQclJMB?usp=sharing"
-            target="_blank">Click here for Google Collab python notebook </a>
+                target="_blank">Click here for Google Collab python notebook </a>
 
-        
+
         </p>
 
 
 
     </section>
 
-<h3>
-    <div class="grid-container">
-        <div class="grid-item" id="chart-Romania_Bulgaria"></div>
-        <div class="grid-item" id="chart-Total_Africa"></div>
-        <div class="grid-item" id="chart-India"></div>
-        <div class="grid-item" id="chart-Asia"></div>
-        <div class="grid-item" id="chart-South_Africa"></div>
-        <div class="grid-item" id="chart-Pakistan_Bangladesh"></div>
-        <div class="grid-item" id="chart-Australia_New_Zealand"></div>
-        <div class="grid-item" id="chart-USA"></div>
-        <div class="grid-item" id="chart-Cyprus_Malta_Croatia"></div>
-    </div>
-</h3>
-
-
-<section>
     <h3>
-        Week 9: Maps
+        <div class="grid-container">
+            <div class="grid-item" id="chart-Romania_Bulgaria"></div>
+            <div class="grid-item" id="chart-Total_Africa"></div>
+            <div class="grid-item" id="chart-India"></div>
+            <div class="grid-item" id="chart-Asia"></div>
+            <div class="grid-item" id="chart-South_Africa"></div>
+            <div class="grid-item" id="chart-Pakistan_Bangladesh"></div>
+            <div class="grid-item" id="chart-Australia_New_Zealand"></div>
+            <div class="grid-item" id="chart-USA"></div>
+            <div class="grid-item" id="chart-Cyprus_Malta_Croatia"></div>
+        </div>
     </h3>
-    <p>
-        description 
-    </p>
-<h3>
-    <figure id="Location11" style="width: 100%; height: 500px;"></figure>
-</h3>
 
-</section>
+
+    <section>
+        <h3>
+            Week 9: Maps
+        </h3>
+        <p>
+            These maps shows Germany defined by region. The first using a tooltip to show the region on hover and the
+            second a chloropleth showing the number of water extraction plants in that region in 2019.
+        </p>
+        <h3>
+            <figure id="Location11" style="width: 100%; height: 500px;"></figure>
+        </h3>
+
+        <h3>
+            <figure id="Location12" style="width: 100%; height: 500px;"></figure>
+        </h3>
+
+    </section>
+
 
 
 
@@ -404,6 +411,10 @@
 
         vegaEmbed('#Location11', figure_11_spec)
 
+        let figure_12_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W9_Maps/cloropleth_WaterExtraction_germany.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location12', figure_12_spec)
 
     </script>
 
