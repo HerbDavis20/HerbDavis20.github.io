@@ -8,19 +8,20 @@ body { /* We can style any HTML element by using its name - here we're styling t
   /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #f2e8c2;
+  background-color: #272727;
   margin:0 auto;
-  max-width: 800px;
-  padding-top: 60px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #24317d;
+  color: #ffffff;
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
@@ -28,6 +29,15 @@ h1, h2, h3, h4, h5, h6 {
   
 
 }
+h1 {
+  color: #f2f2f6; /* Existing color setting */
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: left; /* Change alignment to left */
+  font-size: 2.5em;
+}
+
 
 
 /* We want the headings to be a little bigger than the paragraph text */
@@ -43,25 +53,53 @@ h2 {
   font-size: 1.25em;
 }
 
-/* Paragraph */
+
 p {
   margin-bottom: 1em;
   font-weight: 300;
   text-align: center;
 }
 
-section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 15px 0;
 }
 
-/* Links */
-/* We want the links to be a little more visible  and a different color */
+.nav-button {
+  padding: 15px 30px;
+  font-size: 1.2em; 
+  color: #24317d;
+  text-decoration: none;
+  border: 3px solid #24317d; 
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #24317d; /* Background on hover */
+  color: #f2e8c2; /* Text color on hover */
+}
+
+
+section {
+  margin-bottom: 2.5em;  
+  border: 1px solid #ffffff; 
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #3f3f3f; 
+}
+
+
 
 
 a {
   text-decoration: none;
   position: relative;
-  color: rgb(54, 94, 70);
+  color: rgb(150, 150, 150);
   transition: text-shadow 0.3s, color 0.3s ease;
   text-align: center;
 }
@@ -73,7 +111,7 @@ img {
 }
 
 a:hover {
-  color: rgb(17, 63, 19);
+  color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -99,5 +137,32 @@ figure {
 }
 
 figure:hover {
-  transform: scale(1.1); /* Zoom in on hover */
+  transform: scale(1.03); /* Zoom in on hover */
+}
+
+/* Larger screens */
+h1 {
+  font-size: 2.5em;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .navbar {
+    gap: 10px;
+    padding: 10px 0;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  .navbar a {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
 }

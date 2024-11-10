@@ -46,11 +46,18 @@
         <!-- This is a header, it is the largest text on the page -->
         Herb's Site - Data science
     </h1>
-    <p style="margin-top: 0px; color: darkblue">
+    <p style="margin-top: 0px; color: rgb(240, 240, 241)">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
         Herb's Site | <a href="https://www.linkedin.com/in/herb-davis-6286b7212/">LinkedIn</a> | <a
             href="https://www.github.com/YOUR_GITHUB">GitHub</a>
     </p>
+
+    <nav class="navbar">
+        <a href="page1.html" class="nav-button">Page 1</a>
+        <a href="page2.html" class="nav-button">Page 2</a>
+        <a href="page3.html" class="nav-button">Page 3</a>
+    </nav>
+    
     <h3 class="small">
         <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
         This page acts as your portfolio of charts. You can use it as a good starting point to display your work but
@@ -97,21 +104,25 @@
         </h3>
     </section>
 
-    <h2 style="margin-bottom: 0px;">
-        <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Week 2: Charts in Vega
-    </h2>
-    <h3>
-        Chart 1:
-    </h3>
-    <figure id="Location5" style="width: 100%; height: 400px;"></figure>
+    <section>
+        <h2 style="margin-bottom: 0px;">
+            <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+            <!-- This is a header, it is the largest text on the page -->
+            Week 2: Charts in Vega
+        </h2>
+        <h3>
+            Chart 1:
+        </h3>
+        <figure id="Location5" style="width: 100%; height: 400px;"></figure>
+    
+        <h3>
+            Chart 2:
+            <figure id="Location6" style="width: 100%; height: 400px;"></figure>
+    
+        </h3>
+    </section>
 
-    <h3>
-        Chart 2:
-        <figure id="Location6" style="width: 100%; height: 400px;"></figure>
-
-    </h3>
+<section>
     <h2>
         Week 3: Festival of Economics Data
     </h2>
@@ -130,54 +141,54 @@
         engalnd and is particularly high in areas in London, proving that there is a high level of spacial disparity in
         the labour markets in England.
     </p>
-    <section>
+
 
     </section>
-    <h2>
-        Week 4: Replication. Re-create, then improve, someone else’s chart
-    </h2>
-    <img src="https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/screenshot_w4chart_FT.jpg"
-        alt="Chart Image" width="500" height="300">
 
-    <h3>
-        <figure id="Location9" style="width: 700px; height: 200px;"></figure>
-
-    </h3>
-    <p>
-        Here I have changed the title and subtitle to be more descriptive of the chart. I have also added a 30 day
-        moving average to make it easier to see the overall trend in the chart. I have also made the X-axis labels more
-        clear.
-    </p>
-
-    <h2>
-        Week 5: Scraper. Implement a data scraper of your own
-    </h2>
-    <p>
-        <a href="https://colab.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing"
-            target="_blank">Click here for Google Collab python notebook </a>
-    </p>
-    <p>
-        Chart created by scraping data from Wikipedia:
-    </p>
-    <h3>
-        <figure id="Location10"></figure>
-
-    </h3>
-    <p>
-        This chart shows the 9 countries with the largest population in the world. I chose Wikipedia as typically tables
-        in wikipedia are directly in the HTML file as tables rather than being written in java and included in the HTML
-        file. This allowed me to use the pd.read_HTML function in python.
-    </p>
 
     <section>
+        <h2>
+            Week 4: Replication. Re-create, then improve, someone else’s chart
+        </h2>
+        <img src="https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/screenshot_w4chart_FT.jpg"
+            alt="Chart Image" width="500" height="300">
+    
         <h3>
-            week 6: Loops. Build a dashboard
-
-
-
-
-
+            <figure id="Location9" style="width: 700px; height: 200px;"></figure>
+    
+        </h3>
+        <p>
+            Here I have changed the title and subtitle to be more descriptive of the chart. I have also added a 30 day
+            moving average to make it easier to see the overall trend in the chart. I have also made the X-axis labels more
+            clear.
+        </p>
+    
     </section>
+
+    <section>
+        <h2>
+            Week 5: Scraper. Implement a data scraper of your own
+        </h2>
+        <p>
+            <a href="https://colab.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing"
+                target="_blank">Click here for Google Collab python notebook </a>
+        </p>
+        <p>
+            Chart created by scraping data from Wikipedia:
+        </p>
+        <h3>
+            <figure id="Location10"></figure>
+    
+        </h3>
+        <p>
+            This chart shows the 9 countries with the largest population in the world. I chose Wikipedia as typically tables
+            in wikipedia are directly in the HTML file as tables rather than being written in java and included in the HTML
+            file. This allowed me to use the pd.read_HTML function in python.
+        </p>
+    </section>
+
+
+
     <!--'Romania_Bulgaria', 'Total_Africa', 'India', 'Asia', 'South_Africa', 'Pakistan_Bangladesh', 'Australia_New_Zealand', 'USA', 'Cyprus_Malta_Croatia'-->
 
     <section>
@@ -200,7 +211,7 @@
 
 
 
-    </section>
+   
 
     <h3>
         <div class="grid-container">
@@ -216,7 +227,7 @@
         </div>
     </h3>
 
-
+</section>
     <section>
         <h3>
             Week 9: Maps
