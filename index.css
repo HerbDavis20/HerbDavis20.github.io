@@ -94,7 +94,7 @@ p {
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
   flex-wrap: wrap;
   padding: 15px 0;
 }
