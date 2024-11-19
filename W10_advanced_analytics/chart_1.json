@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "GDP per Capita vs Population of the UK over time",
+    "subtitle": [
+      "GDP per capita (current US$) (x), Population size (y)",
+      "Size of points based on unemployment rate",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W10_advanced_analytics/data.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "circle", "color": "rebeccapurple", "opacity": 0.5},
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "GDP per capita (current US$)",
+      "type": "quantitative",
+      "scale": {"domain": [16000, 55000]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "y": {
+      "field": "Population, total",
+      "type": "quantitative",
+      "scale": {"domain": [56724897, 68750000]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "size": {
+      "field": "Unemployment, total (% of total labor force) ",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {"type": "log", "range": [12, 800]},
+      "legend": null
+    },
+    "tooltip": [{"field": "year", "type": "temporal", "title": "year"}]
+  }
+}
