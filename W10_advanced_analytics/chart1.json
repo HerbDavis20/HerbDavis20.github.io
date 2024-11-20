@@ -18,8 +18,8 @@
     "format": {"type": "csv"}
   },
   "mark": {"type": "circle", "color": "rebeccapurple", "opacity": 0.5},
-  "height": 300,
-  "width": 300,
+  "height": 500,
+  "width": 500,
   "encoding": {
     "x": {
       "field": "GDP per capita (current US$)",
@@ -39,7 +39,7 @@
       "field": "Unemployment, total (% of total labor force) ",
       "type": "quantitative",
       "title": "Prison Rate",
-      "scale": {"type": "log", "range": [12, 800]},
+      "scale": {"type": "log", "range": [12, 1600]},
       "legend": null
     },
     "tooltip": [{"field": "year", "type": "temporal", "title": "year"}]
