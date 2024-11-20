@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "VIX Index and Bitcoin price over time with adjustable year ranges.",
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "vconcat": [
+    {
+      "width": 800,
+      "height": 300,
+      "data": {
+        "url": "https://eco-cors-proxy.netlify.app/proxy?url=https%3A%2F%2Fapi.stlouisfed.org%2Ffred%2Fseries%2Fobservations%3Fseries_id%3DVIXCLS%26api_key%3D22ee7a76e736e32f54f5df0a7171538d%26file_type%3Djson",
+        "format": {"type": "json", "property": "observations"}
+      },
+      "mark": {"type": "line", "color": "red"},
+      "transform": [
+        {"calculate": "year(datum.date)", "as": "year"},
+        {"filter": "datum.year >= minYear && datum.year <= maxYear"}
+      ],
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "title": "Date"},
+        "y": {"field": "value", "type": "quantitative", "title": "VIX Value"}
+      }
+    },
+    {
+      "width": 800,
+      "height": 300,
+      "data": {
+        "url": "https://eco-cors-proxy.netlify.app/proxy?url=https%3A%2F%2Fapi.stlouisfed.org%2Ffred%2Fseries%2Fobservations%3Fseries_id%3DCBBTCUSD%26api_key%3D22ee7a76e736e32f54f5df0a7171538d%26file_type%3Djson",
+        "format": {"type": "json", "property": "observations"}
+      },
+      "mark": {"type": "line", "color": "blue"},
+      "transform": [
+        {"calculate": "year(datum.date)", "as": "year"},
+        {"filter": "datum.year >= minYear && datum.year <= maxYear"}
+      ],
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "title": "Date"},
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Bitcoin Price (USD)"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
