@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Unemployment, total (% of total labor force) (National Estimate) and Tax Revenue as a Percentage of GDP",
+  "description": "A scatterplot showing unemployment and tax revenue for various years.",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/W10_advanced_analytics/date.2.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum['Unemployment, total (% of total labor force)'] > 0 && datum['Tax revenue (% of GDP)'] > 0"
+    }
+  ],
+  "mark": {"type": "point", "shape": "cross", "color": "red"},
+  "encoding": {
+    "x": {
+      "field": "Unemployment, total (% of total labor force)",
+      "type": "quantitative",
+      "scale": {"domain": [0, 13]},
+      "title": "Unemployment"
+    },
+    "y": {
+      "field": "Tax revenue (% of GDP)",
+      "type": "quantitative",
+      "scale": {"domain": [20, 28]},
+      "title": "Tax Revenue"
+    },
+    "tooltip": {"field": "date", "type": "temporal"}
+  },
+  "config": {}
+}
