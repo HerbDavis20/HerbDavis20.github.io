@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Beef prices over time",
+  "title": "Beef prices over time (Roasting Joint)",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/main/W10_bigdata/meat_prices_by_month.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.year_month >= '1580515200000' && datum.year_month <= '1619827200000'"
+    }
+  ],
+  "mark": {"type": "line", "color": "purple"},
+  "encoding": {
+    "x": {
+      "field": "year_month",
+      "type": "temporal",
+      "title": "Month",
+      "axis": {"format": "%b %Y", "labelAngle": -45, "labelFontSize": 12}
+    },
+    "y": {
+      "field": "Beef",
+      "type": "quantitative",
+      "title": "Price of Beef",
+      "scale": {"domain": [11, 12.5]}
+    }
+  },
+  "config": {}
+}
