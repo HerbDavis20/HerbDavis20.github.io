@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "BTC correlation with gold and the VIX indicator - 70 day rolling correlation chart",
+    "subtitle": "PMCC correlation",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/CorrolationBTC_GOLD_BTC_VIX_dataFINAL(7).csv"
+  },
+  "params": [
+    {
+      "name": "start_year",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "end_year",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "End year:"
+      }
+    },
+    {
+      "name": "show_gold",
+      "value": true,
+      "bind": {"input": "checkbox", "name": "Bitcoin/Gold: "}
+    },
+    {
+      "name": "show_vix",
+      "value": true,
+      "bind": {"input": "checkbox", "name": "Bitcoin/VIX: "}
+    }
+  ],
+  "transform": [
+    {"calculate": "year(datum.date)", "as": "year"},
+    {"filter": "datum.year >= start_year && datum.year <= end_year"}
+  ],
+  "width": 800,
+  "height": 350,
+  "layer": [
+    {
+      "transform": [{"filter": "show_gold"}],
+      "mark": {"type": "line", "strokeWidth": 1.1},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "axis": {"grid": false}},
+        "y": {
+          "field": "Rolling_Corr_GOLD_BTC",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "color": {"value": "black"}
+      }
+    },
+    {
+      "transform": [{"filter": "show_vix"}],
+      "mark": {"type": "line", "strokeWidth": 1.1},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "axis": {"grid": false}},
+        "y": {
+          "field": "Rolling_Corr_VIX_BTC",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"grid": false},
+          "scale": {"domain": [-1, 1]}
+        },
+        "color": {"value": "red"}
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "gray",
+        "strokeWidth": 1,
+        "strokeDash": [4, 4]
+      },
+      "encoding": {"y": {"datum": 0, "type": "quantitative"}}
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "LineType",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Rolling Corr Gold BTC", "Rolling Corr VIX BTC"],
+        "range": ["black", "red"]
+      },
+      "legend": {"title": "Legend", "orient": "right"}
+    }
+  },
+  "config": {}
+}
