@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Rolling Correlation Between Bitcoin and the VIX Index, and Bitcoin and Gold",
+    "subtitle": "PMCC correlation - 0 = No correlation",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/CorrolationBTC_GOLD_BTC_VIX_dataFINAL(7).csv"
+  },
+  "params": [
+    {
+      "name": "start_year",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "end_year",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "year(datum.date)", "as": "year"},
+    {"filter": "datum.year >= start_year && datum.year <= end_year"},
+    {
+      "fold": ["Rolling_Corr_GOLD_BTC", "Rolling_Corr_VIX_BTC"],
+      "as": ["Correlation_Type", "Correlation_Value"]
+    },
+    {
+      "calculate": "datum.Correlation_Type === 'Rolling_Corr_GOLD_BTC' ? 'Gold-BTC Correlation' : 'VIX-BTC Correlation'",
+      "as": "Correlation_Type_Label"
+    }
+  ],
+  "width": 800,
+  "height": 350,
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 0.9},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": "Date",
+          "axis": {"grid": true}
+        },
+        "y": {
+          "field": "Correlation_Value",
+          "type": "quantitative",
+          "axis": {"grid": false},
+          "scale": {"domain": [-1, 1]},
+          "title": "PMCC (r) Value"
+        },
+        "color": {
+          "field": "Correlation_Type_Label",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Gold-BTC Correlation", "VIX-BTC Correlation"],
+            "range": ["darkorange", "blue"]
+          },
+          "legend": {"title": "Correlation Types"}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "gray",
+        "strokeDash": [8, 9],
+        "size": 0.55
+      },
+      "encoding": {"y": {"datum": 0}}
+    }
+  ],
+  "config": {}
+}
