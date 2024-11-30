@@ -130,7 +130,7 @@ section {
 a {
   text-decoration: none;
   position: relative;
-  color: rgb(150, 150, 150);
+  color: rgb(53, 106, 240);
   transition: text-shadow 0.3s, color 0.3s ease;
   text-align: center;
 }
