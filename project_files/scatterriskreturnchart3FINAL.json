@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Risk vs. Returns Comparison for Bitcoin and Gold",
+  "title": {
+    "text": "Risk vs. Returns Comparison for Bitcoin and Gold",
+    "subtitle": [
+      "For 2015 - 2024",
+      "Data points increase in size as the years progresses"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 600,
+  "width": 600,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/Gold_data_CHART3.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [{"calculate": "'Gold'", "as": "Dataset"}],
+      "mark": {"type": "circle", "opacity": 0.625},
+      "encoding": {
+        "x": {
+          "field": "annual_return",
+          "type": "quantitative",
+          "scale": {"domain": [-1, 2]},
+          "title": "Annual Returns [(%)/100]"
+        },
+        "y": {
+          "field": "risk",
+          "type": "quantitative",
+          "title": "Risk  [(%)/100]"
+        },
+        "size": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {"domain": [2015, 2024], "range": [80, 500]},
+          "legend": {"title": "Year", "format": "d"}
+        },
+        "color": {"field": "Dataset", "type": "nominal"},
+        "tooltip": [
+          {"field": "Dataset", "type": "nominal", "title": "Dataset"},
+          {"field": "year", "type": "ordinal", "title": "Year"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/Bitcoin_data_CHART3.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        {"calculate": "'Bitcoin'", "as": "Dataset"},
+        {"filter": "datum.year != 2017"}
+      ],
+      "mark": {"type": "circle", "opacity": 0.6},
+      "encoding": {
+        "x": {"field": "annual_return", "type": "quantitative"},
+        "y": {"field": "risk", "type": "quantitative"},
+        "size": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {"domain": [2015, 2024], "range": [50, 400]},
+          "legend": {"title": "Year", "format": "d"}
+        },
+        "color": {"field": "Dataset", "type": "nominal"},
+        "tooltip": [
+          {"field": "Dataset", "type": "nominal", "title": "Dataset"},
+          {"field": "year", "type": "ordinal", "title": "Year"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
