@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Frequency Distribution of Bitcoin Price Reaction to VIX Volatility Index Spikes",
+    "fontSize": 18,
+    "anchor": "start",
+    "subtitle": [
+      "Bitcoin Price changes in response to VIX spike - 2016 - 2024",
+      "VIX spike where >25 indicating high market volatility"
+    ],
+    "subtitleFontSize": 14,
+    "subtitleFontStyle": "italic"
+  },
+  "vconcat": [
+    {
+      "title": "1 Day Post VIX Spike",
+      "description": "",
+      "data": {
+        "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/DAYS1_CHART4.csv"
+      },
+      "mark": "bar",
+      "width": 600,
+      "height": 180,
+      "encoding": {
+        "x": {
+          "field": "Bucket",
+          "type": "nominal",
+          "title": "% Price Change",
+          "axis": {"labelAngle": 0},
+          "sort": [
+            "<-10%",
+            "-10% to -5%",
+            "-5% to 0%",
+            "0% to 5%",
+            "5% to 10%",
+            ">10%"
+          ]
+        },
+        "y": {
+          "field": "Frequency",
+          "type": "quantitative",
+          "scale": {"domain": [0, 19]}
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Bucket === '<-10%' || datum.Bucket === '-10% to -5%' || datum.Bucket === '-5% to 0%'",
+            "value": "#b82a0a"
+          },
+          "value": "steelblue"
+        }
+      }
+    },
+    {
+      "title": "7 Days Post VIX Spike",
+      "description": "Second bar chart with different data.",
+      "data": {
+        "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/DAYS7_CHART4.csv"
+      },
+      "mark": "bar",
+      "width": 600,
+      "height": 180,
+      "encoding": {
+        "x": {
+          "field": "Bucket",
+          "type": "nominal",
+          "title": "% Price Change",
+          "axis": {"labelAngle": 0},
+          "sort": [
+            "<-10%",
+            "-10% to -5%",
+            "-5% to 0%",
+            "0% to 5%",
+            "5% to 10%",
+            ">10%"
+          ]
+        },
+        "y": {
+          "field": "Frequency",
+          "type": "quantitative",
+          "scale": {"domain": [0, 19]}
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Bucket === '<-10%' || datum.Bucket === '-10% to -5%' || datum.Bucket === '-5% to 0%'",
+            "value": "#b82a0a"
+          },
+          "value": "steelblue"
+        }
+      }
+    },
+    {
+      "title": "30 Days Post VIX Spike",
+      "description": "Third bar chart with different data.",
+      "data": {
+        "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/DAYS30_CHART4.csv"
+      },
+      "mark": "bar",
+      "width": 600,
+      "height": 180,
+      "encoding": {
+        "x": {
+          "field": "Bucket",
+          "type": "nominal",
+          "title": "% Price Change",
+          "axis": {"labelAngle": 0},
+          "sort": [
+            "<-10%",
+            "-10% to -5%",
+            "-5% to 0%",
+            "0% to 5%",
+            "5% to 10%",
+            ">10%"
+          ]
+        },
+        "y": {
+          "field": "Frequency",
+          "type": "quantitative",
+          "scale": {"domain": [0, 19]}
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Bucket === '<-10%' || datum.Bucket === '-10% to -5%' || datum.Bucket === '-5% to 0%'",
+            "value": "#b82a0a"
+          },
+          "value": "steelblue"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
