@@ -167,9 +167,7 @@ figure {
   display: inline-block;
 }
 
-figure:hover {
-  transform: scale(1.03); /* Zoom in on hover */
-}
+
 
 /* Larger screens */
 h1 {
