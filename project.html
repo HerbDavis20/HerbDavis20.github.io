@@ -30,17 +30,27 @@
             <a href="index.html" class="nav-button">Portfolio</a>
         </nav>
     </header>
-    <h1>
-        test 2
-    </h1>
+    <h2>
+        How Is the Perception of Bitcoin as a Store of Wealth Changing Over Time?
+    </h2>
 </body>
 
 <section>
 
-    <p>
-        this chart was created using FRED API    
-    </p>
+    <h3>
+        Aims: <br>
+        This project aims to provide an insight into how the perception of Bitcoin has changed as an asset over time.
+        From Bitcoin's
+        inception in 2009, there have been drastic changes in the way people view Bitcoin. In it's early years,
+        traditional investors had significant reservations on the validity of Bitcoin due to its erattic price
+        volatility and domination in dark web transactions. Now, Bitcoin is a common asset among some of the largest
+        funds and asset managers, and this year the first Bitcoin spot ETF was approved by the U.S. Securities and
+        Exchange Commision (SEC).<br><br>
 
+
+        Through this project I aim to take a data driven approach using multiple metrics and statistical methods to
+        reveal the changes in the fundamental value of Bitcoin, both to institutional and retail investors. 
+    </h3>
 
 
     <h3>
@@ -48,42 +58,43 @@
     </h3>
 
     <h3>
-        <figure id="Location4" style="width: 100%; height: 500px;"></figure>  
+        <figure id="Location4" style="width: 100%; height: 500px;"></figure>
     </h3>
 
 
 
- <!--this is the code to leave a small gap between different parts of the page-->
+    <!--this is the code to leave a small gap between different parts of the page-->
     <div style="margin-bottom: 20px;">
         <canvas id="chart1"></canvas>
     </div>
     <div>
         <canvas id="chart2"></canvas>
     </div>
-    
+
 
     <h3>
         <figure id="Location2" style="width: 100%; height: 500px;"></figure>
     </h3>
 
-    
+
     <p>
-      All the data management and calculations were done in  <a href="https://.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing"
-        target="_blank">this Google Colab file </a> CORRECT LINK**
+        All the data management and calculations were done in <a
+            href="https://.research.google.com/drive/1O8yeIJX7_nj5HYAKJi9ycd89iU5gLJy-?usp=sharing" target="_blank">this
+            Google Colab file </a> CORRECT LINK**
 
 
     </p>
 
-     <!--this is the code to leave a small gap between different parts of the page-->
-     <div style="margin-bottom: 20px;">
+    <!--this is the code to leave a small gap between different parts of the page-->
+    <div style="margin-bottom: 20px;">
         <canvas id="chart1"></canvas>
     </div>
     <div>
         <canvas id="chart2"></canvas>
     </div>
-    
+
     <h3>
-        <figure id="Location3" style="width: 100%; height: 500px;"></figure>  
+        <figure id="Location3" style="width: 100%; height: 500px;"></figure>
     </h3>
 
 
@@ -91,23 +102,23 @@
 
 
 <script>
-            let figure_1_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/BTC_VIX_stackedchart.json"; // We're storing the URL of the graph we want to display in a variable
-        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+    let figure_1_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/BTC_VIX_stackedchart.json"; // We're storing the URL of the graph we want to display in a variable
+    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+    vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
-        let figure_2_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/projectchart2FINAL.json"; // We're storing the URL of the graph we want to display in a variable
-        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+    let figure_2_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/projectchart2FINAL.json"; // We're storing the URL of the graph we want to display in a variable
+    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-        vegaEmbed('#Location2', figure_2_spec)
+    vegaEmbed('#Location2', figure_2_spec)
 
-        let figure_3_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/scatterriskreturnchart3FINAL.json"; // We're storing the URL of the graph we want to display in a variable
-        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+    let figure_3_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/scatterriskreturnchart3FINAL.json"; // We're storing the URL of the graph we want to display in a variable
+    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-        vegaEmbed('#Location3', figure_3_spec)
+    vegaEmbed('#Location3', figure_3_spec)
 
-        let figure_4_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/chart4_frequencydistribution.json"; // We're storing the URL of the graph we want to display in a variable
-        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+    let figure_4_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/chart4_frequencydistribution.json"; // We're storing the URL of the graph we want to display in a variable
+    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
-        vegaEmbed('#Location4', figure_4_spec)
+    vegaEmbed('#Location4', figure_4_spec)
 </script>
