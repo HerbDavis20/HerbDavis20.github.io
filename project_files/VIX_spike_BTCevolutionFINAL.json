@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "VIX Volatility Index and Bitcoin Price Analysis",
+    "subtitle": "Identifying VIX Spikes Greater Than 25 and Their Impact on Bitcoin Price Over a 30-Day Window"
+  },
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "End year:"
+      }
+    },
+    {"name": "selectedDate", "value": null}
+  ],
+  "hconcat": [
+    {
+      "width": 600,
+      "height": 300,
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/vix_timeseries.csv",
+            "format": {"type": "csv"}
+          },
+          "mark": {"type": "line", "color": "red"},
+          "transform": [
+            {"calculate": "year(datum.Date)", "as": "year"},
+            {"filter": "datum.year >= minYear && datum.year <= maxYear"}
+          ],
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "title": "Date",
+              "scale": {
+                "domain": [
+                  {"signal": "datetime(minYear, 0, 1)"},
+                  {"signal": "datetime(maxYear, 11, 31)"}
+                ]
+              }
+            },
+            "y": {
+              "field": "Close",
+              "type": "quantitative",
+              "title": "VIX Value"
+            }
+          }
+        },
+        {
+          "width": 500,
+          "height": 300,
+          "data": {
+            "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/vix_spikes(2)_%5Bdate%2Cvalue%5D.csv",
+            "format": {"type": "csv"}
+          },
+          "mark": {
+            "type": "circle",
+            "color": "darkblue",
+            "size": 300,
+            "opacity": 0.4
+          },
+          "transform": [
+            {"calculate": "year(datum.Date)", "as": "year"},
+            {"filter": "datum.year >= minYear && datum.year <= maxYear"}
+          ],
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "title": "Date",
+              "scale": {
+                "domain": [
+                  {"signal": "datetime(minYear, 0, 1)"},
+                  {"signal": "datetime(maxYear, 11, 31)"}
+                ]
+              }
+            },
+            "y": {
+              "field": "Close",
+              "type": "quantitative",
+              "title": "VIX Spikes"
+            }
+          },
+          "selection": {
+            "dotClick": {
+              "type": "single",
+              "fields": ["Date"],
+              "on": "click",
+              "init": {"Date": "1620777600000"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 300,
+      "height": 300,
+      "title": "30 Day Bitcoin Price Evolution Post VIX Spike",
+      "data": {
+        "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/BTCfiltere_data_intereactivechart.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        {"filter": "datum.VIX_Date === timeFormat(dotClick.Date, '%Y-%m-%d')"}
+      ],
+      "mark": {"type": "line", "color": "darkblue"},
+      "encoding": {
+        "x": {
+          "field": "BTC_Date",
+          "type": "temporal",
+          "title": "30 Day Window"
+        },
+        "y": {
+          "field": "BTC_Close",
+          "type": "quantitative",
+          "title": "Bitcoin Price (USD)"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
