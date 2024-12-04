@@ -61,6 +61,10 @@
         <figure id="Location4" style="width: 100%; height: 500px;"></figure>
     </h3>
 
+    <h3>
+        <figure id="Location5" style="width: 100%; height: 500px;"></figure>
+    </h3>
+
 
 
     <!--this is the code to leave a small gap between different parts of the page-->
@@ -121,4 +125,10 @@
     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
     vegaEmbed('#Location4', figure_4_spec)
+
+    
+    let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/VIX_spike_BTCevolutionFINAL.json"; // We're storing the URL of the graph we want to display in a variable
+    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+    vegaEmbed('#Location5', figure_5_spec)
 </script>
