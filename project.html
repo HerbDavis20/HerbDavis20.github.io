@@ -14,6 +14,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
     <style>
         #chartGrid {
@@ -31,7 +35,7 @@
         </nav>
     </header>
     <h2>
-        How Is the Perception of Bitcoin as a Store of Wealth Changing Over Time?
+        Evaluating Bitcoin: The Transition Towards Financial Legitimacy
     </h2>
 </body>
 
@@ -41,15 +45,15 @@
         Aims: <br>
         This project aims to provide an insight into how the perception of Bitcoin has changed as an asset over time.
         From Bitcoin's
-        inception in 2009, there have been drastic changes in the way people view Bitcoin. In it's early years,
-        traditional investors had significant reservations on the validity of Bitcoin due to its erattic price
+        inception in 2009, there has been drastic changes in the way people view Bitcoin. In it's early years,
+        traditional investors had significant reservations on the validity of Bitcoin due to its erratic price
         volatility and domination in dark web transactions. Now, Bitcoin is a common asset among some of the largest
-        funds and asset managers, this year being the first time a Bitcoin spot ETF has been approved by the U.S. Securities and
-        Exchange Commision (SEC).<br><br>
+        funds and asset managers, this year being the first time a Bitcoin spot ETF has been approved by the U.S.
+        Securities and Exchange Commision (SEC).<br><br>
 
 
         Through this project I aim to take a data driven approach using multiple metrics and statistical methods to
-        reveal the changes in the fundamental value of Bitcoin, to both institutional and retail investors. 
+        reveal the changes in the fundamental value of Bitcoin, to both institutional and retail investors.
     </h3>
 
 
@@ -58,50 +62,172 @@
     </h3>
 
     <h3>
+        To begin with, I looked at a broader view of the historic price movements of the VIX volatility index and the
+        price of Bitcoin to discover any prominent trends in the data. The data for this chart comes from the FRED API
+        and is
+        embedded directily into the vega spec to allow it to remain live and update daily with the data. <br><br>
+
+        The VIX volatility index is derived from combining weighted prices of the S&P500 put and call option prices for
+        the next 30 days. It predicts the likely range of movement in US eqity markets and is often regarded as the
+        'fear'
+        index. The VIX represents a good indication of the current equity market sentiment. <br><br>
+
+        I thought this would be a useful comparison to make as conventionally, during times of high market
+        volatility, investors move from stocks into 'safe haven' assets like gold or U.S. Treasury bonds to mitigate
+        risk. If there is a similar trend developing with Bitcoin, it shows that investors are beginning to view it as
+        more
+        of a valid and valuable asset from what it once was.
+    </h3>
+
+    <!--Historgarm chart-->
+    <h3>
         <figure id="Location4" style="width: 100%; height: 500px;"></figure>
     </h3>
 
     <p>
-        <a
-    href= "https://colab.research.google.com/drive/1pKfZXRCbHqTXkeBlSARKU-A_5TpTG84J?usp=sharing" target="_blank">Google Colab file </a>
+        <a href="https://colab.research.google.com/drive/1pKfZXRCbHqTXkeBlSARKU-A_5TpTG84J?usp=sharing"
+            target="_blank">Google Colab file </a>
     </p>
-    
-    
+
+    <h3>
+        Next I looked into how the price of Bitcoin reacts to spikes in the VIX index over different lengths of time.
+        In the 30 day period after a spike there is a tendancy for significant, greater than 10% increases in price,
+        however
+        in large
+        there is no clear trend in price increases vs decreases here.
+    </h3>
+
+    <!-- interacitve Hconcat chart-->
     <h3>
         <figure id="Location5" style="width: 100%; height: 500px;"></figure>
     </h3>
     <p>
-        <a
-    href= "https://colab.research.google.com/drive/1yWTZWVJYHThKIUeOKJeGFTXgr0GlYEeK?usp=sharing" target="_blank">Google Colab file </a>
+        <a href="https://colab.research.google.com/drive/1yWTZWVJYHThKIUeOKJeGFTXgr0GlYEeK?usp=sharing"
+            target="_blank">Google Colab file </a>
     </p>
 
-    
+    <h3>
+        Now, to investigate individual price evolutions of Bitcoin after spikes in the VIX index to determine if
+        Bitcoin is continuing to act as a risk-on asset, or evolving towards risk-off, I made the
+        volatility spike points interactive to show the following 30 days of bitcoin price movement. <br><br>
+
+        I sourced the data for this chart using the yfinance python library to retrive data from Yahoo Finance, working
+        similarly to an API since the Yahoo Finance API has been discontinued.
+    </h3>
 
 
-    <!--this is the code to leave a small gap between different parts of the page-->
 
+
+    <!--ROLLING CORRELATION CHART -->
 
     <h3>
         <figure id="Location2" style="width: 100%; height: 500px;"></figure>
     </h3>
     <p>
-        <a
-    href= "https://colab.research.google.com/drive/1Y_q4TYMGMlzz3VZXJkU0jAAy_1MiqS4o?usp=sharing" target="_blank">Google Colab file </a>
+        <a href="https://colab.research.google.com/drive/1Y_q4TYMGMlzz3VZXJkU0jAAy_1MiqS4o?usp=sharing"
+            target="_blank">Google Colab file </a>
     </p>
 
+    <H3>
+        Next I compared correlation between Bitcoin and gold, a classic risk-off asset, with the correlation between
+        Bitcoin and the VIX index. Where positive, both variable's value is moving in the same direction. Where the
+        price of bitcoin and gold are moving in the same direction, it is suggestive of bitcoin acting as hedge against
+        volatility. <br><br>
+
+        The data cleaining and calculation of the rolling correlation was done in pandas using the rolling_corr
+        function.
+
+    </H3>
 
 
-    <!--this is the code to leave a small gap between different parts of the page-->
-  
+    <!--Risk Return scatter plot-->
+
 
     <h3>
         <figure id="Location3" style="width: 100%; height: 500px;"></figure>
     </h3>
 
     <p>
-        <a
-    href= "https://colab.research.google.com/drive/1vHFpVOb73UXIpjhngv-dIVYrgs-2QoOQ?usp=sharing" target="_blank">Google Colab file </a>
+        <a href="https://colab.research.google.com/drive/1vHFpVOb73UXIpjhngv-dIVYrgs-2QoOQ?usp=sharing"
+            target="_blank">Google Colab file </a>
     </p>
+
+    <h3>
+
+
+
+    </h3>
+
+    <h3>
+        Annual returns: \[ (1 + \text{avgerage daily returns})^{\text{number of days}} - 1 \] <br>
+        Risk: \[
+        \ (\text{standard deviation of daily returns}) \times \sqrt{\text{number of days}}
+        \]
+
+    </h3>
+    <h3>
+
+    </h3>
+    <br><br>
+
+    <h2>
+        Data Used:
+    </h2>
+
+
+
+
+    <br>
+    <h2>
+        Challenges:
+    </h2>
+
+    <h3>
+        As most of my data used in this project is daily price data, the majority of the challenges I came across were
+        in cleaning and manupulating the data in python to extract as much information from it as possible. In
+        particular, working with dates caused many issues due to the different formats that dates come in. To resolve
+        this, I began to use pd.to_datetime function on all dates before beginning my analysis as this would prevent
+        issues later.
+        <br><br>
+        Another issue I came across was finding live price data. Many of the API's that are available were behind
+        paywalls and only allowed minimal data to be extracted for free. The FRED API works well and is easy to use
+        however lacks a lot of key data for my project. I discovered the yfinance package late into my project but this
+        was an effective tool in sourcing live financial data.
+        <br><br>
+        Another challenge I came across was values in the dataset not being stored as numbers so when it came to working
+        with the data I was getting a lot of NaN outputs. To solve this I made sure to convert all the data into floats
+        or integers
+        using .astype(float)
+        <br><br>
+        When filtering values out of a dataframe, I also learnt the importance of resetting the index back to zero to
+        prevent issues when merging dataframes later on. During my analysis in python, with so many stages of filtering
+        and calculations, I found it useful to make new dataframes for different stages of anaylsis, rather than
+        continue updataing the same dataframe. This was better for experimentation and made errors easier to find and
+        resolve.
+
+
+    </h3>
+    <br>
+    <h2>
+        Conclusion:
+    </h2>
+    <h3>
+        **This is contradictory because the VIX typically reflects risk aversion, while gold reflects a hedge against
+        risk. Bitcoin cannot be perfectly aligned with both risk-on (high VIX) and risk-off (gold) behaviors
+        simultaneously without undermining its singular market narrative.**
+    </h3>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </section>
 
@@ -112,7 +238,7 @@
 
     vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
-    let figure_2_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/projectchart2FINAL.json"; // We're storing the URL of the graph we want to display in a variable
+    let figure_2_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/RollingCorrChartFINALFINAL.json"; // We're storing the URL of the graph we want to display in a variable
     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
     vegaEmbed('#Location2', figure_2_spec)
@@ -127,7 +253,7 @@
 
     vegaEmbed('#Location4', figure_4_spec)
 
-    
+
     let figure_5_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/FINAL%20chart%203of1.json"; // We're storing the URL of the graph we want to display in a variable
     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
