@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/30day_percentagechange_fromspikechart.csv"
+  },
+  "title": {
+    "text": "Percentage Change of Bitcoin price For 30-Day Periods Following Spike in VIX"
+  },
+  "width": 700,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "darkblue", "strokeWidth": 1},
+      "encoding": {
+        "x": {
+          "field": "VIX_Date",
+          "type": "ordinal",
+          "title": "Date of VIX Spike"
+        },
+        "y": {
+          "field": "change30day",
+          "type": "quantitative",
+          "title": "Percentage Change"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [5, 5],
+        "color": "black",
+        "strokeWidth": 0.7
+      },
+      "encoding": {"y": {"datum": 0}}
+    }
+  ],
+  "config": {}
+}
