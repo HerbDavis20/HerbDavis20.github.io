@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/correlationchartAVERAGES(2).csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "fold": ["Rolling_Corr_GOLD_BTC", "Rolling_Corr_VIX_BTC"],
+      "as": ["key", "value"]
+    },
+    {"calculate": "toNumber(datum.Year)", "as": "numeric_year"},
+    {
+      "calculate": "datum.key === 'Rolling_Corr_GOLD_BTC' ? 'Gold-BTC' : datum.key === 'Rolling_Corr_VIX_BTC' ? 'VIX-BTC' : datum.key",
+      "as": "display_key"
+    }
+  ],
+  "width": 700,
+  "height": 400,
+  "title": "Yearly Average Correlation ",
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "numeric_year",
+          "type": "quantitative",
+          "title": "Year",
+          "axis": {"format": "d"}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "PMCC (r) Value"
+        },
+        "color": {
+          "field": "display_key",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Gold-BTC", "VIX-BTC"],
+            "range": ["darkorange", "blue"]
+          },
+          "legend": {"title": "Legend", "orient": "top-left"}
+        }
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.key === 'Rolling_Corr_GOLD_BTC'"},
+        {"regression": "value", "on": "numeric_year"}
+      ],
+      "mark": {"type": "line", "strokeDash": [4, 3], "strokeWidth": 1},
+      "encoding": {
+        "x": {"field": "numeric_year", "type": "quantitative"},
+        "y": {"field": "value", "type": "quantitative"},
+        "color": {"value": "red"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.key === 'Rolling_Corr_VIX_BTC'"},
+        {"regression": "value", "on": "numeric_year"}
+      ],
+      "mark": {"type": "line", "strokeDash": [4, 3], "strokeWidth": 1},
+      "encoding": {
+        "x": {"field": "numeric_year", "type": "quantitative"},
+        "y": {"field": "value", "type": "quantitative"},
+        "color": {"value": "red"}
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [3, 5],
+        "color": "grey",
+        "opacity": 0.8
+      },
+      "encoding": {"y": {"datum": 0}, "size": {"value": 1}}
+    }
+  ],
+  "config": {}
+}
