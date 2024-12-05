@@ -109,7 +109,7 @@
     <h3>
         Now, to investigate individual price evolutions of Bitcoin after spikes in the VIX index to determine if
         Bitcoin is continuing to act as a risk-on asset, or evolving towards risk-off, I made the
-        volatility spike points interactive to show the following 30 days of bitcoin price movement. <br><br>
+        volatility spike points interactive to output the following 30 days of bitcoin price movement. <br><br>
 
         I sourced the data for this chart using the yfinance python library to retrive data from Yahoo Finance, working
         similarly to an API since the Yahoo Finance API has been discontinued.
@@ -149,6 +149,10 @@
             target="_blank">Google Colab file </a>
     </p>
 
+    <h3>
+        Out of the data for the correlation plot above, I calculated the yearly averages for the r value to make it
+        clear what the overall trend in the data is.
+    </h3>
 
     <!--Risk Return scatter plot-->
 
@@ -222,6 +226,10 @@
         Conclusion:
     </h2>
     <h3>
+        From the data, 
+
+
+
         **This is contradictory because the VIX typically reflects risk aversion, while gold reflects a hedge against
         risk. Bitcoin cannot be perfectly aligned with both risk-on (high VIX) and risk-off (gold) behaviors
         simultaneously without undermining its singular market narrative.**
@@ -269,7 +277,7 @@
 
     vegaEmbed('#Location5', figure_5_spec)
 
-    let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/CorrelationAverageChart.json"; // We're storing the URL of the graph we want to display in a variable
+    let figure_6_spec = "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/project_files/CorrAverageChart%20(3).json"; // We're storing the URL of the graph we want to display in a variable
     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
     vegaEmbed('#Location6', figure_6_spec)
