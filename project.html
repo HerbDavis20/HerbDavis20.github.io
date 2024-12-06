@@ -46,7 +46,7 @@
     <h3>
         <br>
         This project aims to provide an insight into how the perception of Bitcoin has changed over time.
-        In it's early years,
+        In its early years,
         traditional investors had significant reservations on the validity of Bitcoin due to its erratic price
         volatility and domination in dark web transactions. Now, Bitcoin is a common asset among some of the largest
         funds and asset managers.<br><br>
@@ -64,7 +64,7 @@
     <h3>
         I thought comparing bitcoin and the VIX would be insightful as high market
         volatility often pushes investors to move from stocks into 'safe haven' assets like gold or U.S. Treasury bonds.
-        If there is a similar trend with Bitcoin, it implies a shift in bitcoins perception.
+        If there is a similar trend with Bitcoin, it implies a shift in bitcoin's perception.
     </h3>
     <h2>
         Data:
@@ -96,7 +96,7 @@
     </h2>
     <h3>
         I sourced the data from <a href="https://uk.finance.yahoo.com/" target="_blank">Yahoo Finance </a> using the
-        yfinance python library. Using bins in pandas I could sort the data and count the number of entrys to get
+        yfinance python library. Using bins in pandas I could sort the data and count the number of entries to get
         frequency.
         <br><br><br>
 
@@ -110,7 +110,7 @@
         </p>
 
         <h3>
-            To investigate bitcoin's price evolution after VIX spikes to determine the risk-on or risk-off nature, I
+            To investigate bitcoin's price evolution following VIX spikes to determine the risk-on or risk-off nature, I
             made
             the
             volatility spike points interactive to output the following 30 days of bitcoin price movement. <br><br>
@@ -120,7 +120,7 @@
             Data:
         </h2>
         <h3>
-            I sourced this data from Yahoo Finance using the yfinace library.
+            I sourced this data from Yahoo Finance using the yfinance library.
         </h3>
         <br><br><br>
         <!--interactive analysis scatter -->
@@ -161,13 +161,11 @@
             <h2>Data:</h2>
             <h3>
 
-                The Bitcoin data for this chart came from the FRED API, however I was struggling to find a free API that
-                could
-                source historic gold price data before I discovered the yfinance package. Instead, I used a downloaded
+                The Bitcoin data for this chart came from the FRED API. For gold I used a downloaded
                 CSV
                 file from <a
                     href="https://auronum.co.uk/gold-price-news/historic-gold-price-data/?utm_source=chatgpt.com"
-                    target="_blank">Auronum </a> <br><br>
+                    target="_blank">Auronum. </a> <br><br>
 
 
                 The bitcoin data contained a lot of null values that had to be filtered out.
@@ -196,9 +194,7 @@
             the data.
             <br><br>
 
-            It is evident that there is an increasingly positive correlation between bitcoin and gold
-            showing bitcoin's sentiment is increasingly risk-off, also highlighted by the increasingly negative VIX and
-            bitcoin correlation.
+          Bitcoin's increasing positive correlation with gold and negative correlation with the VIX suggests it is shifting towards a more risk-off sentiment. 
 
         </h3>
         <br><br><br>
@@ -223,7 +219,7 @@
         </h3>
 
         <h3>
-            Annual returns: \[ (1 + \text{avgerage daily returns})^{\text{number of days}} - 1 \] <br>
+            Annual returns: \[ (1 + \text{average daily returns})^{\text{number of days}} - 1 \] <br>
             Risk: \[
             \ (\text{standard deviation of daily returns}) \times \sqrt{\text{number of days}}
             \]
@@ -251,7 +247,7 @@
         </h2>
 
         <h3>
-            Knowing how to filter and sort data to make creating a complex chart in vega more efficint I found to be
+            Knowing how to filter and sort data to make creating a complex chart in vega more efficient I found to be
             particularly hard and took a lot of trial and error. Making sure the data was in long form was a good
             starting point to solve this.
             <br><br>
@@ -267,15 +263,13 @@
             this
             was an effective tool in sourcing live financial data.
             <br><br>
-            Another challenge I faced was incorectly formatted numbers, causing NaN outputs when analyising. To solve
+            Another challenge I faced was incorrectly formatted numbers, causing NaN outputs when analysing. To solve
             this I made sure to convert all the data into
             floats
             or integers
             using .astype(float)
             <br><br>
-            When filtering data in pandas, I learnt to reset the index to prevent merging issues. Creating seperate
-            dataframes at each stage I also found to make experimenting and finding errors more efficient.
-
+        
 
         </h3>
         <br>
@@ -287,17 +281,16 @@
             increasingly stable asset, more traditionally aligned with 'safe haven'assets that investors flock to during
             times of high market turbulence. Looking into bitcoin's correlation with other traditional assets and the
             VIX index showed bitcoin increasingly behaving like a risk-off asset, where in its early days it was nothing
-            but a speculative bubble. before 2018 where both correlations are negative suggests a contradiction in
-            bitcoins sentiment. More recently there is a clear divide in the two correlations which shows that bitcoin's
+            but a speculative bubble. before 2018, when both correlations were negative, suggests a contradiction in
+            bitcoin's sentiment. More recently there is a clear divide in the two correlations which shows that bitcoin's
             perception is consolidating. There is still a way to go for bitcoin however, as
             when comparing the risk/reward
             with gold, it is clear to see such variance at times cannot be associated with a low risk asset.
             Furthermore,
-            in times of deep market stress, investors are looking for assets with intrinsic value, not just a
+            in times of deep market stress, investors are looking for assets with intrinsic value, rather than being purely
             speculation fuelled asset. It can be argued
             that bitcoin does not have these characteristics such as dividends and cash flow that other more classical
             assets have.
-            ght have
         </h3>
 
 
