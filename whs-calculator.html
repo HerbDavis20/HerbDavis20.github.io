@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>WHS Handicap Calculator — 9 & 18 Holes (Single‑File)</title>
 <style>
   :root{
@@ -18,28 +18,63 @@
     --radius: 16px;
   }
   *{box-sizing:border-box}
-  body{margin:0;font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";background:linear-gradient(180deg,var(--bg),#fff);color:var(--text)}
-  .container{max-width:1120px;margin:0 auto;padding:24px}
+  html, body {height: 100%}
+  body{
+    margin:0;
+    font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+    background:linear-gradient(180deg,var(--bg),#fff);
+    color:var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent iOS input zoom by keeping base font-size >=16px */
+    font-size: 16px;
+  }
+  .container{max-width:1120px;margin:0 auto;padding:24px;padding-left: max(24px, env(safe-area-inset-left));padding-right: max(24px, env(safe-area-inset-right));}
   header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:16px}
-  h1{font-size:clamp(22px,3vw,28px);margin:0;font-weight:650;letter-spacing:-0.01em}
+  h1{font-size:clamp(22px,3.8vw,28px);margin:0;font-weight:650;letter-spacing:-0.01em}
   .hint{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:14px}
   .grid{display:grid;gap:20px}
   @media (min-width: 900px){.grid{grid-template-columns: 1.7fr 1fr}}
+  /* Mobile-friendly ordering: show results first on phones */
+  .inputs{order:2}
+  .results{order:1}
+  @media (min-width: 900px){ .inputs{order:1} .results{order:2} }
+
   .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
   .card .content{padding:20px}
-  label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
-  input, select, textarea{width:100%;padding:12px 12px;border:1px solid var(--border);border-radius:12px;background:#fff;font-size:15px}
+  label{display:block;font-size:14px;color:var(--muted);margin-bottom:6px}
+  input, select, textarea{
+    width:100%;
+    padding:14px 14px; /* 14px to hit iOS 44px min target */
+    min-height: 44px; /* iOS recommended tap target */
+    border:1px solid var(--border);
+    border-radius:12px;
+    background:#fff;
+    font-size:18px; /* prevents iOS zoom */
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  input:focus, select:focus{outline: 2px solid rgba(37,99,235,.35); outline-offset: 2px}
   .row{display:grid;gap:12px}
   .row.cols-2{grid-template-columns:1fr 1fr}
   .row.cols-3{grid-template-columns:1fr 1fr 1fr}
+  @media (max-width: 520px){ .row.cols-2, .row.cols-3 { grid-template-columns: 1fr } }
+
   .actions{display:flex;gap:10px;flex-wrap:wrap}
-  button{appearance:none;border:0;border-radius:999px;padding:10px 14px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer;transition:.15s}
+  button{
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    appearance:none;border:0;border-radius:999px;padding:12px 18px;
+    min-height: 44px; /* iOS tap target */
+    background:var(--accent);color:#fff;font-weight:700;cursor:pointer;transition:.15s;font-size:16px
+  }
   button:hover{background:var(--accent-2)}
   button.ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
   .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--border);border-radius:999px}
   .result{border:1px solid var(--border);border-radius:16px;padding:16px}
   .result .label{color:var(--muted);font-size:14px}
-  .result .value{font-size:28px;font-weight:700;letter-spacing:-0.02em}
+  .result .value{font-size:32px;font-weight:800;letter-spacing:-0.02em}
   table{width:100%;border-collapse:collapse;font-size:14px}
   th,td{text-align:left;padding:12px 12px}
   thead th{color:var(--muted);font-weight:600;border-bottom:1px solid var(--border)}
@@ -47,79 +82,34 @@
   tbody tr:hover{background:#f8fafc}
   .muted{color:var(--muted-2)}
   footer{margin-top:20px;color:var(--muted-2);font-size:12px;line-height:1.6}
+
+  /* Sticky bottom action bar for iPhone */
+  .cta-fixed{
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-top: 1px solid var(--border);
+    display: flex; gap: 10px; justify-content: center;
+  }
+  .cta-fixed .btn{flex:1; max-width: 520px}
+  @media (min-width: 900px){ .cta-fixed{display:none} }
+
+  /* Make history table easier to scroll on mobile */
+  #historyWrap{ -webkit-overflow-scrolling: touch; }
 </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>WHS Handicap Calculator (UK) — 9 & 18 Holes</h1>
-      <div class="hint">Uses WHS Score Differential formulas. 9‑hole combine is marked as approx.</div>
+      <div class="hint">Optimised for iPhone: big buttons, no input zoom, sticky actions.</div>
     </header>
 
     <div class="grid">
-      <!-- Left: Inputs -->
-      <div class="card">
-        <div class="content">
-          <div class="row cols-2">
-            <div>
-              <label for="holes">Holes</label>
-              <select id="holes">
-                <option value="18">18 holes</option>
-                <option value="9">9 holes</option>
-              </select>
-            </div>
-            <div>
-              <label for="ags">Adjusted Gross Score (<span id="holesLabel">18</span>-hole)</label>
-              <input id="ags" inputmode="numeric" placeholder="e.g. 88" />
-            </div>
-          </div>
-
-          <div class="row cols-3" style="margin-top:12px">
-            <div>
-              <label for="cr">Course Rating (<span id="holesLabel2">18</span>-hole)</label>
-              <input id="cr" inputmode="decimal" placeholder="e.g. 71.2" />
-            </div>
-            <div>
-              <label for="slope">Slope Rating (<span id="holesLabel3">18</span>-hole)</label>
-              <input id="slope" inputmode="numeric" placeholder="e.g. 125" />
-            </div>
-            <div>
-              <label for="par">Par (optional)</label>
-              <input id="par" inputmode="numeric" placeholder="e.g. 72" />
-            </div>
-          </div>
-
-          <div class="row cols-2" style="margin-top:12px">
-            <div>
-              <label for="pcc">Playing Conditions (PCC)</label>
-              <select id="pcc">
-                <option value="-1">-1</option>
-                <option value="0" selected>0</option>
-                <option value="1">+1</option>
-                <option value="2">+2</option>
-                <option value="3">+3</option>
-              </select>
-            </div>
-            <div id="hiWrap" style="display:none">
-              <label for="hi">Current Handicap Index (optional)</label>
-              <input id="hi" inputmode="decimal" placeholder="e.g. 14.3" />
-            </div>
-          </div>
-
-          <div style="margin-top:12px">
-            <label for="notes">Notes (course/tees, competition, etc.)</label>
-            <input id="notes" placeholder="e.g. St Andrews Old, yellow tees" />
-          </div>
-
-          <div class="actions" style="margin-top:16px">
-            <button id="addRound">Add to history</button>
-            <button class="ghost" id="clearInputs">Clear inputs</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Results -->
-      <div class="card">
+      <!-- Results first on mobile -->
+      <div class="card results">
         <div class="content">
           <h2 style="margin:0 0 10px 0;font-size:18px">Results</h2>
           <div class="result" id="sdBox">
@@ -139,14 +129,66 @@
             <div class="value" id="hiFromHistory">–</div>
             <div class="muted" style="font-size:12px;margin-top:6px">Best 8 of last 20 (or mean if fewer than 8). Estimate only.</div>
           </div>
+        </div>
+      </div>
 
-          <div class="result" style="margin-top:12px">
-            <div class="label">Quick tips</div>
-            <ul class="muted" style="margin:6px 0 0 18px;padding:0;line-height:1.6">
-              <li>Use Adjusted Gross Score (net double bogey max per hole).</li>
-              <li>Enter Course Rating and Slope for the tees you played.</li>
-              <li>PCC is often 0—leave as 0 if unsure.</li>
-            </ul>
+      <!-- Inputs -->
+      <div class="card inputs">
+        <div class="content">
+          <div class="row cols-2">
+            <div>
+              <label for="holes">Holes</label>
+              <select id="holes" autocomplete="off">
+                <option value="18">18 holes</option>
+                <option value="9">9 holes</option>
+              </select>
+            </div>
+            <div>
+              <label for="ags">Adjusted Gross Score (<span id="holesLabel">18</span>-hole)</label>
+              <input id="ags" type="tel" inputmode="numeric" pattern="[0-9]*" placeholder="e.g. 88" autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="row cols-3" style="margin-top:12px">
+            <div>
+              <label for="cr">Course Rating (<span id="holesLabel2">18</span>-hole)</label>
+              <input id="cr" type="text" inputmode="decimal" placeholder="e.g. 71.2" autocomplete="off" />
+            </div>
+            <div>
+              <label for="slope">Slope Rating (<span id="holesLabel3">18</span>-hole)</label>
+              <input id="slope" type="tel" inputmode="numeric" pattern="[0-9]*" placeholder="e.g. 125" autocomplete="off" />
+            </div>
+            <div>
+              <label for="par">Par (optional)</label>
+              <input id="par" type="tel" inputmode="numeric" pattern="[0-9]*" placeholder="e.g. 72" autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="row cols-2" style="margin-top:12px">
+            <div>
+              <label for="pcc">Playing Conditions (PCC)</label>
+              <select id="pcc" autocomplete="off">
+                <option value="-1">-1</option>
+                <option value="0" selected>0</option>
+                <option value="1">+1</option>
+                <option value="2">+2</option>
+                <option value="3">+3</option>
+              </select>
+            </div>
+            <div id="hiWrap" style="display:none">
+              <label for="hi">Current Handicap Index (optional)</label>
+              <input id="hi" type="text" inputmode="decimal" placeholder="e.g. 14.3" autocomplete="off" />
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <label for="notes">Notes (course/tees, competition, etc.)</label>
+            <input id="notes" placeholder="e.g. St Andrews Old, yellow tees" autocomplete="off" />
+          </div>
+
+          <div class="actions" style="margin-top:16px">
+            <button id="addRound">Add to history</button>
+            <button class="ghost" id="clearInputs">Clear inputs</button>
           </div>
         </div>
       </div>
@@ -186,6 +228,12 @@
     <footer>
       <p>Disclaimer: This tool is for guidance only. Official Handicap Indexes are maintained by national associations via WHS. 9‑hole combination uses an <em>unofficial</em> expected‑score model if you provide your current HI.</p>
     </footer>
+  </div>
+
+  <!-- Sticky CTA for iPhone -->
+  <div class="cta-fixed">
+    <button id="addRound2" class="btn">Add to history</button>
+    <button id="clearInputs2" class="btn ghost">Clear</button>
   </div>
 
 <script>
@@ -257,6 +305,8 @@
 
   const addRoundBtn = $('addRound');
   const clearInputsBtn = $('clearInputs');
+  const addRoundBtn2 = $('addRound2');
+  const clearInputsBtn2 = $('clearInputs2');
 
   const historyWrap = $('historyWrap');
   const historyBody = $('historyBody');
@@ -365,7 +415,7 @@
       }
     }
 
-    const id = crypto && crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random());
+    const id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now() + Math.random());
     const date = new Date().toISOString().slice(0,10);
     rounds.push({ id, date, holes, ags, cr, slope, pcc, sd18, notes });
     saveRounds(rounds);
@@ -380,6 +430,9 @@
 
     recalc();
     refreshHistory();
+
+    // Gentle haptic-like feedback via brief button state
+    try { document.activeElement && document.activeElement.blur(); } catch(e){}
   }
 
   function clearInputs(){
@@ -415,6 +468,8 @@
   [holesEl, agsEl, crEl, slopeEl, pccEl, hiEl].forEach(el => el.addEventListener('input', recalc));
   addRoundBtn.addEventListener('click', addRound);
   clearInputsBtn.addEventListener('click', clearInputs);
+  if (addRoundBtn2) addRoundBtn2.addEventListener('click', addRound);
+  if (clearInputsBtn2) clearInputsBtn2.addEventListener('click', clearInputs);
   clearHistoryBtn.addEventListener('click', clearHistory);
 
   // init
