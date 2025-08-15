@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WHS Handicap Calculator — 9 & 18 Holes (Single‑File)</title>
+<style>
+  :root{
+    --bg: #f8fafc; /* slate-50 */
+    --panel: #ffffff;
+    --text: #0f172a; /* slate-900 */
+    --muted: #475569; /* slate-600 */
+    --muted-2: #64748b; /* slate-500 */
+    --border: #e2e8f0; /* slate-200 */
+    --accent: #2563eb; /* blue-600 */
+    --accent-2: #1d4ed8; /* blue-700 */
+    --shadow: 0 10px 20px rgba(2,6,23,0.06);
+    --radius: 16px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";background:linear-gradient(180deg,var(--bg),#fff);color:var(--text)}
+  .container{max-width:1120px;margin:0 auto;padding:24px}
+  header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:16px}
+  h1{font-size:clamp(22px,3vw,28px);margin:0;font-weight:650;letter-spacing:-0.01em}
+  .hint{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:14px}
+  .grid{display:grid;gap:20px}
+  @media (min-width: 900px){.grid{grid-template-columns: 1.7fr 1fr}}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .card .content{padding:20px}
+  label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+  input, select, textarea{width:100%;padding:12px 12px;border:1px solid var(--border);border-radius:12px;background:#fff;font-size:15px}
+  .row{display:grid;gap:12px}
+  .row.cols-2{grid-template-columns:1fr 1fr}
+  .row.cols-3{grid-template-columns:1fr 1fr 1fr}
+  .actions{display:flex;gap:10px;flex-wrap:wrap}
+  button{appearance:none;border:0;border-radius:999px;padding:10px 14px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer;transition:.15s}
+  button:hover{background:var(--accent-2)}
+  button.ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--border);border-radius:999px}
+  .result{border:1px solid var(--border);border-radius:16px;padding:16px}
+  .result .label{color:var(--muted);font-size:14px}
+  .result .value{font-size:28px;font-weight:700;letter-spacing:-0.02em}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:12px 12px}
+  thead th{color:var(--muted);font-weight:600;border-bottom:1px solid var(--border)}
+  tbody tr{border-bottom:1px solid var(--border)}
+  tbody tr:hover{background:#f8fafc}
+  .muted{color:var(--muted-2)}
+  footer{margin-top:20px;color:var(--muted-2);font-size:12px;line-height:1.6}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WHS Handicap Calculator (UK) — 9 & 18 Holes</h1>
+      <div class="hint">Uses WHS Score Differential formulas. 9‑hole combine is marked as approx.</div>
+    </header>
+
+    <div class="grid">
+      <!-- Left: Inputs -->
+      <div class="card">
+        <div class="content">
+          <div class="row cols-2">
+            <div>
+              <label for="holes">Holes</label>
+              <select id="holes">
+                <option value="18">18 holes</option>
+                <option value="9">9 holes</option>
+              </select>
+            </div>
+            <div>
+              <label for="ags">Adjusted Gross Score (<span id="holesLabel">18</span>-hole)</label>
+              <input id="ags" inputmode="numeric" placeholder="e.g. 88" />
+            </div>
+          </div>
+
+          <div class="row cols-3" style="margin-top:12px">
+            <div>
+              <label for="cr">Course Rating (<span id="holesLabel2">18</span>-hole)</label>
+              <input id="cr" inputmode="decimal" placeholder="e.g. 71.2" />
+            </div>
+            <div>
+              <label for="slope">Slope Rating (<span id="holesLabel3">18</span>-hole)</label>
+              <input id="slope" inputmode="numeric" placeholder="e.g. 125" />
+            </div>
+            <div>
+              <label for="par">Par (optional)</label>
+              <input id="par" inputmode="numeric" placeholder="e.g. 72" />
+            </div>
+          </div>
+
+          <div class="row cols-2" style="margin-top:12px">
+            <div>
+              <label for="pcc">Playing Conditions (PCC)</label>
+              <select id="pcc">
+                <option value="-1">-1</option>
+                <option value="0" selected>0</option>
+                <option value="1">+1</option>
+                <option value="2">+2</option>
+                <option value="3">+3</option>
+              </select>
+            </div>
+            <div id="hiWrap" style="display:none">
+              <label for="hi">Current Handicap Index (optional)</label>
+              <input id="hi" inputmode="decimal" placeholder="e.g. 14.3" />
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <label for="notes">Notes (course/tees, competition, etc.)</label>
+            <input id="notes" placeholder="e.g. St Andrews Old, yellow tees" />
+          </div>
+
+          <div class="actions" style="margin-top:16px">
+            <button id="addRound">Add to history</button>
+            <button class="ghost" id="clearInputs">Clear inputs</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Results -->
+      <div class="card">
+        <div class="content">
+          <h2 style="margin:0 0 10px 0;font-size:18px">Results</h2>
+          <div class="result" id="sdBox">
+            <div class="label">Score Differential (<span id="sdBasis">18</span>-hole basis)</div>
+            <div class="value" id="sdValue">–</div>
+            <div class="muted" id="sdNote" style="font-size:13px;margin-top:6px;display:none"></div>
+          </div>
+
+          <div class="result" style="margin-top:12px">
+            <div class="label"><span id="sd18Title">18-hole Score Differential</span></div>
+            <div class="value" id="sd18Value">–</div>
+            <div class="muted" id="sd18Note" style="font-size:12px;margin-top:6px"></div>
+          </div>
+
+          <div class="result" style="margin-top:12px;background:#f8fafc">
+            <div class="label">Estimated Handicap Index from history</div>
+            <div class="value" id="hiFromHistory">–</div>
+            <div class="muted" style="font-size:12px;margin-top:6px">Best 8 of last 20 (or mean if fewer than 8). Estimate only.</div>
+          </div>
+
+          <div class="result" style="margin-top:12px">
+            <div class="label">Quick tips</div>
+            <ul class="muted" style="margin:6px 0 0 18px;padding:0;line-height:1.6">
+              <li>Use Adjusted Gross Score (net double bogey max per hole).</li>
+              <li>Enter Course Rating and Slope for the tees you played.</li>
+              <li>PCC is often 0—leave as 0 if unsure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section style="margin-top:24px" class="card">
+      <div class="content">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+          <h2 style="margin:0;font-size:18px">Round history</h2>
+          <div class="muted" style="font-size:13px">HI = average of best 8 of last 20 differentials</div>
+        </div>
+        <div id="historyEmpty" class="muted" style="margin-top:10px">No rounds yet. Add a round to build your history.</div>
+        <div id="historyWrap" style="display:none;overflow:auto;margin-top:10px">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Holes</th>
+                <th>AGS</th>
+                <th>CR</th>
+                <th>Slope</th>
+                <th>PCC</th>
+                <th>18‑hole SD</th>
+                <th>Notes</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="historyBody"></tbody>
+          </table>
+          <div class="actions" style="margin-top:10px">
+            <button class="ghost" id="clearHistory">Clear history</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Disclaimer: This tool is for guidance only. Official Handicap Indexes are maintained by national associations via WHS. 9‑hole combination uses an <em>unofficial</em> expected‑score model if you provide your current HI.</p>
+    </footer>
+  </div>
+
+<script>
+(function(){
+  const $ = (id) => document.getElementById(id);
+  const r1 = (x) => Math.round(x * 10) / 10;
+  const toNum = (v) => {
+    if (v === '' || v === null || v === undefined) return NaN;
+    const n = Number(v);
+    return Number.isFinite(n) ? n : NaN;
+  };
+
+  function calc18SD(ags, cr, slope, pcc){
+    return ((ags - cr - pcc) * 113) / slope;
+  }
+  function calc9SD(ags9, cr9, slope9, pcc){
+    return (113 / slope9) * (ags9 - cr9 - 0.5 * pcc);
+  }
+  function expected9_fromHI(hi){
+    // Unofficial estimate for combining 9-hole SD with HI
+    return 0.5 * (0.52 * hi + 1.2);
+  }
+  function combine9to18(sd9, hi){
+    if (!Number.isFinite(hi)) return NaN;
+    return sd9 + expected9_fromHI(hi);
+  }
+
+  function hiFromSDs(sds){
+    const last20 = sds.slice(-20);
+    if (last20.length === 0) return NaN;
+    if (last20.length < 8){
+      const avg = last20.reduce((a,b)=>a+b,0) / last20.length;
+      return avg;
+    }
+    const sorted = [...last20].sort((a,b)=>a-b);
+    const best8 = sorted.slice(0,8);
+    const avg = best8.reduce((a,b)=>a+b,0)/8;
+    return avg;
+  }
+
+  const STORAGE_KEY = 'whs-calculator-rounds-v1';
+  function loadRounds(){
+    try{ const raw = localStorage.getItem(STORAGE_KEY); return raw ? JSON.parse(raw) : []; } catch(e){ return []; }
+  }
+  function saveRounds(arr){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch(e){}
+  }
+
+  const holesEl = $('holes');
+  const agsEl = $('ags');
+  const crEl = $('cr');
+  const slopeEl = $('slope');
+  const parEl = $('par');
+  const pccEl = $('pcc');
+  const hiEl = $('hi');
+  const notesEl = $('notes');
+
+  const holesLabel = $('holesLabel');
+  const holesLabel2 = $('holesLabel2');
+  const holesLabel3 = $('holesLabel3');
+  const hiWrap = $('hiWrap');
+
+  const sdValue = $('sdValue');
+  const sdNote = $('sdNote');
+  const sdBasis = $('sdBasis');
+  const sd18Value = $('sd18Value');
+  const sd18Note = $('sd18Note');
+  const sd18Title = $('sd18Title');
+
+  const addRoundBtn = $('addRound');
+  const clearInputsBtn = $('clearInputs');
+
+  const historyWrap = $('historyWrap');
+  const historyBody = $('historyBody');
+  const historyEmpty = $('historyEmpty');
+  const clearHistoryBtn = $('clearHistory');
+  const hiFromHistory = $('hiFromHistory');
+
+  let rounds = loadRounds();
+
+  function formatSD(x){
+    return Number.isFinite(x) ? r1(x).toFixed(1) : '–';
+  }
+
+  function refreshHistory(){
+    if (!rounds.length){
+      historyWrap.style.display = 'none';
+      historyEmpty.style.display = 'block';
+      hiFromHistory.textContent = '–';
+      return;
+    }
+    historyWrap.style.display = 'block';
+    historyEmpty.style.display = 'none';
+
+    historyBody.innerHTML = '';
+    const sds = [];
+    for (const r of rounds){
+      if (Number.isFinite(r.sd18)) sds.push(r.sd18);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${r.date}</td>
+        <td>${r.holes}</td>
+        <td>${r.ags}</td>
+        <td>${r.cr}</td>
+        <td>${r.slope}</td>
+        <td>${r.pcc}</td>
+        <td><strong>${formatSD(r.sd18)}</strong></td>
+        <td title="${r.notes || ''}">${r.notes || ''}</td>
+        <td><button class="ghost" data-id="${r.id}">Delete</button></td>
+      `;
+      historyBody.appendChild(tr);
+    }
+    const hi = hiFromSDs(sds);
+    hiFromHistory.textContent = formatSD(hi);
+  }
+
+  function recalc(){
+    const holes = Number(holesEl.value);
+    holesLabel.textContent = holes;
+    holesLabel2.textContent = holes;
+    holesLabel3.textContent = holes;
+    hiWrap.style.display = holes === 9 ? 'block' : 'none';
+    sdBasis.textContent = holes;
+
+    const ags = toNum(agsEl.value);
+    const cr = toNum(crEl.value);
+    const slope = toNum(slopeEl.value);
+    const pcc = toNum(pccEl.value);
+    const hi = toNum(hiEl.value);
+
+    let sd = NaN;
+    let sd18Immediate = NaN;
+
+    if (Number.isFinite(ags) && Number.isFinite(cr) && Number.isFinite(slope) && Number.isFinite(pcc)){
+      if (holes === 18){
+        sd = calc18SD(ags, cr, slope, pcc);
+        sd18Immediate = sd;
+      } else {
+        sd = calc9SD(ags, cr, slope, pcc);
+        sd18Immediate = combine9to18(sd, hi);
+      }
+    }
+
+    sdValue.textContent = formatSD(sd);
+
+    if (holes === 9){
+      sdNote.style.display = 'block';
+      sdNote.textContent = '9-hole SD = (113 / slope) × (AGS − CR − 0.5×PCC)';
+      sd18Title.textContent = '18-hole Score Differential (from 9) — approx.';
+      sd18Note.textContent = 'Provide your current HI to combine with an expected 9-hole SD (approximate).';
+    } else {
+      sdNote.style.display = 'none';
+      sd18Title.textContent = '18-hole Score Differential';
+      sd18Note.textContent = '';
+    }
+
+    sd18Value.textContent = formatSD(sd18Immediate);
+  }
+
+  function addRound(){
+    const holes = Number(holesEl.value);
+    const ags = toNum(agsEl.value);
+    const cr = toNum(crEl.value);
+    const slope = toNum(slopeEl.value);
+    const pcc = toNum(pccEl.value);
+    const hi = toNum(hiEl.value);
+    const notes = notesEl.value.trim();
+
+    // Calculate now to store sd18
+    let sd18 = NaN;
+    if (Number.isFinite(ags) && Number.isFinite(cr) && Number.isFinite(slope) && Number.isFinite(pcc)){
+      if (holes === 18){
+        sd18 = calc18SD(ags, cr, slope, pcc);
+      } else {
+        const sd9 = calc9SD(ags, cr, slope, pcc);
+        sd18 = combine9to18(sd9, hi); // may be NaN if no HI
+      }
+    }
+
+    const id = crypto && crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random());
+    const date = new Date().toISOString().slice(0,10);
+    rounds.push({ id, date, holes, ags, cr, slope, pcc, sd18, notes });
+    saveRounds(rounds);
+
+    // clear inputs except PCC
+    agsEl.value = '';
+    crEl.value = '';
+    slopeEl.value = '';
+    parEl.value = '';
+    hiEl.value = '';
+    notesEl.value = '';
+
+    recalc();
+    refreshHistory();
+  }
+
+  function clearInputs(){
+    agsEl.value = '';
+    crEl.value = '';
+    slopeEl.value = '';
+    parEl.value = '';
+    hiEl.value = '';
+    notesEl.value = '';
+    recalc();
+  }
+
+  function clearHistory(){
+    if (!rounds.length) return;
+    if (!confirm('Clear all saved rounds?')) return;
+    rounds = [];
+    saveRounds(rounds);
+    refreshHistory();
+  }
+
+  // delete buttons in table
+  document.addEventListener('click', (e)=>{
+    const el = e.target;
+    if (el && el.matches('button[data-id]')){
+      const id = el.getAttribute('data-id');
+      rounds = rounds.filter(r => r.id !== id);
+      saveRounds(rounds);
+      refreshHistory();
+    }
+  });
+
+  // wire up events
+  [holesEl, agsEl, crEl, slopeEl, pccEl, hiEl].forEach(el => el.addEventListener('input', recalc));
+  addRoundBtn.addEventListener('click', addRound);
+  clearInputsBtn.addEventListener('click', clearInputs);
+  clearHistoryBtn.addEventListener('click', clearHistory);
+
+  // init
+  recalc();
+  refreshHistory();
+})();
+</script>
+</body>
+</html>
