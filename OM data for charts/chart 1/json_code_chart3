@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "A bar chart with negative values. We can hide the axis domain line, and instead use a conditional grid color to draw a zero baseline.",
+  "background": "#f5f5f5",
+  "title": {
+    "text": "Net Migration Flows by Country",
+    "subtitle": "Positive values indicate inflows; negative values indicate outflows",
+    "anchor": "start",
+    "align": "left"
+  },
+  "config": {
+    "title": {
+      "fontSize": 18,
+      "subtitleFontSize": 14
+    }
+  },
+  "width": 600,
+  "height": 500,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/OM%20data%20for%20charts/chart%203/widedata-chart3.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": {
+        "field": "flows",
+        "order": "ascending"
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelAngle": 0,
+        "labelPadding": 4
+      }
+    },
+    "x": {
+      "field": "flows",
+      "type": "quantitative",
+      "scale": {
+        "domain": [-18000, 18000]
+      },
+      "axis": {
+        "gridColor": {
+          "condition": { "test": "datum.value === 0", "value": "black" },
+          "value": "#ddd"
+        }
+      }
+    },
+    "color": {
+      "condition": {
+        "test": "datum.flows < 0",
+        "value": "darkorange"
+      },
+      "value": "steelblue"
+    }
+  },
+  "layer": [
+    { "mark": "bar" }
+  ]
+}
