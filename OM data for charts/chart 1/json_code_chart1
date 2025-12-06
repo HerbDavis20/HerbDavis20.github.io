@@ -1,0 +1,241 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "background": "#f5f5f5",
+  "width": 530,
+  "height": 350,
+  "title": {
+    "text": [
+      "OBR forecast a large share of the Non-Domicile reform’s forecast revenue to be",
+      " eroded by wealthy individuals moving abroad."
+    ],
+    "subtitle": " Forecast Net Costings of 2025 Reforms to the Non-Domicile Regime ",
+    "anchor": "start"
+  },
+  "config": {
+    "title": {
+      "fontSize": 18,
+      "subtitleFontSize": 14
+    },
+    "axis": {
+      "titleFontSize": 12,
+      "titleFontWeight": 520
+    }
+  },
+  "description": "Two lines with labels at line ends.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/OM%20data%20for%20charts/chart%201/OBR_data_clean(2).csv"
+  },
+  "transform": [
+    {
+      "fold": ["combined ", "post behavioural "],
+      "as": ["series", "value"]
+    },
+    {
+      "calculate": "datum.series == 'combined ' ? 'Theoretical Revenue (Static)' : 'Including Behavioural Forecast (migration)'",
+      "as": "series_label"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "title": "",
+            "tickCount": 5
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Public Sector Net Borrowing (£Bn)"
+        },
+        "color": {
+          "field": "series_label",
+          "type": "nominal",
+          "title": null,
+          "legend": null
+        }
+      }
+    },
+
+    {
+      "transform": [
+        {
+          "filter": "datum.series_label == 'Theoretical Revenue (Static)'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 4,
+        "fontSize": 12,
+        "fontWeight": 500
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "series_label",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "series_label",
+          "type": "nominal",
+          "title": null,
+          "legend": null
+        }
+      }
+    },
+
+    {
+      "transform": [
+        {
+          "filter": "datum.series_label == 'Including Behavioural Forecast (migration)'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 4,
+        "fontSize": 12,
+        "fontWeight": 500
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Including Behavioural Forecast"
+        },
+        "color": {
+          "field": "series_label",
+          "type": "nominal",
+          "title": null,
+          "legend": null
+        }
+      }
+    },
+
+    {
+      "transform": [
+        {
+          "filter": "datum.series_label == 'Including Behavioural Forecast (migration)'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 4,
+        "dy": 12,
+        "fontSize": 12,
+        "fontWeight": 500
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "(Effects of Migration/ Tax Liability Changes)"
+        },
+        "color": {
+          "field": "series_label",
+          "type": "nominal",
+          "title": null,
+          "legend": null
+        }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 12,
+        "color": "#0000FF",
+        "fontWeight": "normal",
+        "href": "https://obr.uk/docs/dlm_uploads/Non-doms-supplementary-release-Jan-2025.pdf"
+      },
+      "encoding": {
+        "x": { "value": -40 },
+        "y": { "value": 400 },
+        "text": {
+          "value": "Source: Office for Budget Responsibility (OBR), Economic and fiscal outlook."
+        }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 12,
+        "color": "black",
+        "fontWeight": "normal",
+        "href": "https://obr.uk/docs/dlm_uploads/Non-doms-supplementary-release-Jan-2025.pdf"
+      },
+      "encoding": {
+        "x": { "value": -40 },
+        "y": { "value": 405 },
+        "text": {
+          "value": "A negative figure represents a reduction in public sector net spending -"
+        }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 12,
+        "color": "black",
+        "fontWeight": "normal",
+        "href": "https://obr.uk/docs/dlm_uploads/Non-doms-supplementary-release-Jan-2025.pdf"
+      },
+      "encoding": {
+        "x": { "value": -40 },
+        "y": { "value": 420 },
+        "text": {
+          "value": "Includes foreign income and gains (FIG), inheritance tax (IHT), and Temporary Repatriation Facility (TRF) regimes"
+        }
+      }
+    }
+  ]
+}
