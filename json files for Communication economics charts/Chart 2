@@ -1,0 +1,183 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Non-dom individuals over time.",
+  "background": "#f5f5f5",
+  "width": 720,
+  "height": 300,
+  "title": {
+    "text": [
+      "Non‑dom taxpayers in the UK and their total tax liability shrink following the 2017 tax reform - ",
+      " Will the 2025 reform have the same effect?"
+    ],
+    "subtitle": "UK tax years 2008–2024",
+    "anchor": "start",
+    "color": "black",
+    "subtitleColor": "#555577"
+  },
+  "config": {
+    "title": {
+      "fontSize": 18,
+      "subtitleFontSize": 14
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/HerbDavis20/HerbDavis20.github.io/refs/heads/main/OM%20data%20for%20charts/chart%202/dataround(10!!).csv"
+  },
+  "resolve": {
+    "scale": { "y": "independent" }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "steelblue",
+        "opacity": 0.3,
+        "size": 42.45,
+        "stroke": "black",
+        "strokeWidth": 0.5,
+        "clip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "tax_year_start",
+          "type": "temporal",
+          "title": "",
+          "scale": {
+            "domain": ["2008-01-01", "2024-01-01"]
+          }
+        },
+        "y": {
+          "field": "tax_lib",
+          "type": "quantitative",
+          "scale": {
+            "domain": [6, 13]
+          },
+          "axis": {
+            "title": "Total Tax Liabilities (£bn)",
+            "orient": "right",
+            "grid": false,
+            "titleColor": "steelblue",
+            "labelColor": "steelblue",
+            "tickColor": "steelblue",
+            "domainColor": "steelblue"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "darkorange"
+      },
+      "encoding": {
+        "x": {
+          "field": "Tax_Year_Ending",
+          "type": "temporal",
+          "title": ""
+        },
+        "y": {
+          "field": "Number_of_individuals",
+          "type": "quantitative",
+          "axis": {
+            "title": "",
+            "grid": true,
+            "titleColor": "darkorange",
+            "labelColor": "darkorange",
+            "tickColor": "darkorange",
+            "domainColor": "darkorange"
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "event": "Policy change", "date": "2017-04-05" },
+          { "event": "Policy change", "date": "2015-07-08" }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeDash": [6, 6],
+        "size": 1.5
+      },
+      "encoding": {
+        "x": { "field": "date", "type": "temporal" }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "event": "Policy Implemented", "date": "2017-04-05" }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 6,
+        "dy": 15,
+        "fontSize": 11,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "field": "date", "type": "temporal" },
+        "y": { "value": 0 },
+        "text": { "field": "event" }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "event": "Policy Change Announced", "date": "2015-07-08" }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": -60,
+        "dy": -2,
+        "fontSize": 11,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "field": "date", "type": "temporal" },
+        "y": { "value": 0 },
+        "text": { "field": "event" }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "color": "#0000FF"
+      },
+      "encoding": {
+        "x": { "value": -30 },
+        "y": { "value": 345 },
+        "text": {
+          "value": "Source: Non-domiciled taxpayers in the UK - HM Revenue & Customs"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 12,
+        "color": "black"
+      },
+      "encoding": {
+        "x": { "value": -40 },
+        "y": { "value": 40 },
+        "text": { "value": "" }
+      }
+    }
+  ]
+}
